@@ -24,7 +24,8 @@ namespace IopCommon
   /// </summary>
   public class RegexEval
   {
-    private static NLog.Logger log = NLog.LogManager.GetLogger("IopCommon.RegexEval");
+    /// <summary>Class logger.</summary>
+    private static Logger log = new Logger("IopCommon.RegexEval");
 
     /// <summary>Regular expression object.</summary>
     private Regex regex;

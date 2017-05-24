@@ -578,10 +578,10 @@ namespace IopProtocol
     /// <param name="Payload">Payload to include in the response.</param>
     /// <param name="Clock">Timestamp to include in the response.</param>
     /// <returns>PingResponse message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreatePingResponse(ProxProtocolMessage Request, byte[] Payload, long Clock)
+    public ProxProtocolMessage CreatePingResponse(ProxProtocolMessage Request, byte[] Payload, DateTime Clock)
     {
       PingResponse pingResponse = new PingResponse();
-      pingResponse.Clock = Clock;
+      pingResponse.Clock = ProtocolHelper.DateTimeToUnixTimestampMs(Clock);
       pingResponse.Payload = ProtocolHelper.ByteArrayToByteString(Payload);
 
       ProxProtocolMessage res = CreateSingleResponse(Request);
@@ -756,11 +756,15 @@ namespace IopProtocol
       CreateActivityRequest createActivityRequest = new CreateActivityRequest();
       createActivityRequest.Activity = Activity;
 
-      foreach (byte[] ignoredServerId in IgnoreServerIds)
-        createActivityRequest.IgnoreServerIds.Add(ProtocolHelper.ByteArrayToByteString(ignoredServerId));
+      if (IgnoreServerIds != null)
+      {
+        foreach (byte[] ignoredServerId in IgnoreServerIds)
+          createActivityRequest.IgnoreServerIds.Add(ProtocolHelper.ByteArrayToByteString(ignoredServerId));
+      }
 
       ProxProtocolMessage res = CreateConversationRequest();
       res.Request.ConversationRequest.CreateActivity = createActivityRequest;
+      SignConversationRequestBodyPart(res, Activity.ToByteArray());
 
       return res;
     }
@@ -838,11 +842,15 @@ namespace IopProtocol
       updateActivityRequest.Activity = Activity;
       updateActivityRequest.NoPropagation = NoPropagation;
 
-      foreach (byte[] ignoredServerId in IgnoreServerIds)
-        updateActivityRequest.IgnoreServerIds.Add(ProtocolHelper.ByteArrayToByteString(ignoredServerId));
+      if (IgnoreServerIds != null)
+      {
+        foreach (byte[] ignoredServerId in IgnoreServerIds)
+          updateActivityRequest.IgnoreServerIds.Add(ProtocolHelper.ByteArrayToByteString(ignoredServerId));
+      }
 
       ProxProtocolMessage res = CreateConversationRequest();
       res.Request.ConversationRequest.UpdateActivity = updateActivityRequest;
+      SignConversationRequestBodyPart(res, Activity.ToByteArray());
 
       return res;
     }
@@ -951,13 +959,13 @@ namespace IopProtocol
     /// <param name="IncludePrimaryOnly">If set to true, the proximity server only returns activities for which it acts as the primary proximity server. 
     /// Otherwise, activities from the proximity server's neighborhood can be included.</param>
     /// <returns>ActivitySearchRequest message that is ready to be sent.</returns>
-    public ProxProtocolMessage CreateActivitySearchRequest(string ActivityType, string ExtraData, DateTime? StartNotAfter, DateTime? ExpirationNotBefore, byte[] OwnerNetworkId = null, GpsLocation Location = null, uint Radius = 0, uint MaxResponseRecordCount = 100, uint MaxTotalRecordCount = 1000, bool IncludePrimaryOnly = false)
+    public ProxProtocolMessage CreateActivitySearchRequest(string ActivityType, string ExtraData = null, DateTime? StartNotAfter = null, DateTime? ExpirationNotBefore = null, byte[] OwnerNetworkId = null, GpsLocation Location = null, uint Radius = 0, uint MaxResponseRecordCount = 100, uint MaxTotalRecordCount = 1000, bool IncludePrimaryOnly = false)
     {
       ActivitySearchRequest activitySearchRequest = new ActivitySearchRequest();
       activitySearchRequest.IncludePrimaryOnly = IncludePrimaryOnly;
       activitySearchRequest.MaxResponseRecordCount = MaxResponseRecordCount;
       activitySearchRequest.MaxTotalRecordCount = MaxTotalRecordCount;
-      activitySearchRequest.OwnerNetworkId = ProtocolHelper.ByteArrayToByteString(OwnerNetworkId);
+      activitySearchRequest.OwnerNetworkId = ProtocolHelper.ByteArrayToByteString(OwnerNetworkId != null ? OwnerNetworkId : new byte[0]);
       activitySearchRequest.Type = ActivityType != null ? ActivityType : "";
       activitySearchRequest.StartNotAfter = StartNotAfter != null ? ProtocolHelper.DateTimeToUnixTimestampMs(StartNotAfter.Value) : 0;
       activitySearchRequest.ExpirationNotBefore = ExpirationNotBefore != null ? ProtocolHelper.DateTimeToUnixTimestampMs(ExpirationNotBefore.Value) : 0;

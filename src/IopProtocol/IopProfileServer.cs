@@ -418,10 +418,11 @@ namespace Iop.Profileserver {
 
   #region Messages
   /// <summary>
+  ///
   ///  This is complete message as it goes over the wire. It includes the 32-bit header with message length.
   ///
   ///  There is a 1 byte prefix because of Google Protobuf protocol, so the actual binary data for a message
-  ///  with body size 4660 bytes would be:
+  ///  with body size 4,660 bytes would be:
   ///
   ///    0D 34 12 00 00
   ///
@@ -480,7 +481,7 @@ namespace Iop.Profileserver {
     public const int BodyFieldNumber = 2;
     private global::Iop.Profileserver.Message body_;
     /// <summary>
-    ///  Message itself.
+    ///  Maximum size of the whole message is 1,048,576 bytes, which means the maximal value in the header is 1,048,571.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.Message Body {
@@ -14118,7 +14119,7 @@ namespace Iop.Profileserver {
     /// <summary>Field number for the "refresh" field.</summary>
     public const int RefreshFieldNumber = 4;
     /// <summary>
-    ///   * refresh expiration date of all existing profiles.
+    ///   * refresh neighbor's expiration time.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.SharedProfileRefreshAllItem Refresh {
@@ -14745,7 +14746,7 @@ namespace Iop.Profileserver {
 
   /// <summary>
   ///
-  ///  Request to refresh all existing profiles of the requesting server on the target server.
+  ///  Request to refresh the neighbor status of the requesting server on the target server.
   /// </summary>
   public sealed partial class SharedProfileRefreshAllItem : pb::IMessage<SharedProfileRefreshAllItem> {
     private static readonly pb::MessageParser<SharedProfileRefreshAllItem> _parser = new pb::MessageParser<SharedProfileRefreshAllItem>(() => new SharedProfileRefreshAllItem());

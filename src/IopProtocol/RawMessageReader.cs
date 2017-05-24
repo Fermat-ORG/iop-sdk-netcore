@@ -140,7 +140,7 @@ namespace IopProtocol
                       if (messageHeaderBuffer[0] == 0x0D)
                       {
                         uint hdr = ProtocolHelper.GetValueLittleEndian(messageHeaderBuffer, 1);
-                        if (hdr + ProtocolHelper.HeaderSize <= ProtocolHelper.MaxMessageSize)
+                        if ((0 < hdr) && (hdr + ProtocolHelper.HeaderSize <= ProtocolHelper.MaxMessageSize))
                         {
                           messageSize = hdr;
                           readerStatus = ReaderStatus.ReadingBody;
@@ -148,7 +148,12 @@ namespace IopProtocol
                           Array.Copy(messageHeaderBuffer, messageBuffer, messageHeaderBuffer.Length);
                           log.Trace("Reading of message header completed. Message size is {0} bytes.", messageSize);
                         }
-                        else
+                        else if (hdr == 0)
+                        {
+                          log.Warn("Zero message body size received.");
+                          res.ProtocolViolation = true;
+                        }
+                        else 
                         {
                           log.Warn("Client claimed message of size {0} which exceeds the maximum.", hdr + ProtocolHelper.HeaderSize);
                           res.ProtocolViolation = true;

@@ -121,7 +121,7 @@ namespace IopProtocol
         switch (Format)
         {
           case "G":
-            res = string.Format("{0} {1}", Latitude.ToString("0.######", Provider), Longitude.ToString("0.######", Provider));
+            res = string.Format("{0}, {1}", Latitude.ToString("0.######", Provider), Longitude.ToString("0.######", Provider));
             break;
 
           case "US":

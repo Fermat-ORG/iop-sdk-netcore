@@ -163,7 +163,7 @@ namespace IopCommon
     public DbLogger(string CategoryName)
     {
       string logName = "IopCommon.DbLogger";
-      log = new Logger(logName, CategoryName);
+      log = new Logger(logName, CategoryName + " ");
     }
 
     /// <summary>

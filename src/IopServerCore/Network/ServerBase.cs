@@ -118,15 +118,18 @@ namespace IopServerCore.Network
 
       ShutdownSignaling.SignalShutdown();
 
-      List<IncomingClientBase> clients = clientList.GetNetworkClientList();
-      try
+      if (clientList != null)
       {
-        log.Info("Closing {0} existing client connections of role servers.", clients.Count);
-        foreach (IncomingClientBase client in clients)
-          client.CloseConnection();
-      }
-      catch
-      {
+        List<IncomingClientBase> clients = clientList.GetNetworkClientList();
+        try
+        {
+          log.Info("Closing {0} existing client connections of role servers.", clients.Count);
+          foreach (IncomingClientBase client in clients)
+            client.CloseConnection();
+        }
+        catch
+        {
+        }
       }
 
       foreach (TcpRoleServer<TIncomingClient> server in tcpServers.Values)
