@@ -37,59 +37,59 @@ namespace Iop.Proximityserver {
             "aW5nbGVSZXNwb25zZRgIIAEoCzIjLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU2lu",
             "Z2xlUmVzcG9uc2VIABJJChRjb252ZXJzYXRpb25SZXNwb25zZRgJIAEoCzIp",
             "LmlvcC5wcm94aW1pdHlzZXJ2ZXIuQ29udmVyc2F0aW9uUmVzcG9uc2VIAEIS",
-            "ChBDb252ZXJzYXRpb25UeXBlIvMBCg1TaW5nbGVSZXF1ZXN0Eg8KB3ZlcnNp",
+            "ChBDb252ZXJzYXRpb25UeXBlIocDCg1TaW5nbGVSZXF1ZXN0Eg8KB3ZlcnNp",
             "b24YASABKAwSMAoEcGluZxgCIAEoCzIgLmlvcC5wcm94aW1pdHlzZXJ2ZXIu",
             "UGluZ1JlcXVlc3RIABI6CglsaXN0Um9sZXMYAyABKAsyJS5pb3AucHJveGlt",
             "aXR5c2VydmVyLkxpc3RSb2xlc1JlcXVlc3RIABJUChZnZXRBY3Rpdml0eUlu",
             "Zm9ybWF0aW9uGAQgASgLMjIuaW9wLnByb3hpbWl0eXNlcnZlci5HZXRBY3Rp",
-            "dml0eUluZm9ybWF0aW9uUmVxdWVzdEgAQg0KC1JlcXVlc3RUeXBlIvgBCg5T",
-            "aW5nbGVSZXNwb25zZRIPCgd2ZXJzaW9uGAEgASgMEjEKBHBpbmcYAiABKAsy",
-            "IS5pb3AucHJveGltaXR5c2VydmVyLlBpbmdSZXNwb25zZUgAEjsKCWxpc3RS",
-            "b2xlcxgDIAEoCzImLmlvcC5wcm94aW1pdHlzZXJ2ZXIuTGlzdFJvbGVzUmVz",
-            "cG9uc2VIABJVChZnZXRBY3Rpdml0eUluZm9ybWF0aW9uGAQgASgLMjMuaW9w",
-            "LnByb3hpbWl0eXNlcnZlci5HZXRBY3Rpdml0eUluZm9ybWF0aW9uUmVzcG9u",
-            "c2VIAEIOCgxSZXNwb25zZVR5cGUitwcKE0NvbnZlcnNhdGlvblJlcXVlc3QS",
-            "EQoJc2lnbmF0dXJlGAEgASgMEj4KBXN0YXJ0GAIgASgLMi0uaW9wLnByb3hp",
-            "bWl0eXNlcnZlci5TdGFydENvbnZlcnNhdGlvblJlcXVlc3RIABJECg52ZXJp",
-            "ZnlJZGVudGl0eRgDIAEoCzIqLmlvcC5wcm94aW1pdHlzZXJ2ZXIuVmVyaWZ5",
-            "SWRlbnRpdHlSZXF1ZXN0SAASRAoOY3JlYXRlQWN0aXZpdHkYBCABKAsyKi5p",
-            "b3AucHJveGltaXR5c2VydmVyLkNyZWF0ZUFjdGl2aXR5UmVxdWVzdEgAEkQK",
-            "DnVwZGF0ZUFjdGl2aXR5GAUgASgLMiouaW9wLnByb3hpbWl0eXNlcnZlci5V",
-            "cGRhdGVBY3Rpdml0eVJlcXVlc3RIABJECg5kZWxldGVBY3Rpdml0eRgGIAEo",
-            "CzIqLmlvcC5wcm94aW1pdHlzZXJ2ZXIuRGVsZXRlQWN0aXZpdHlSZXF1ZXN0",
-            "SAASRAoOYWN0aXZpdHlTZWFyY2gYByABKAsyKi5pb3AucHJveGltaXR5c2Vy",
-            "dmVyLkFjdGl2aXR5U2VhcmNoUmVxdWVzdEgAEkwKEmFjdGl2aXR5U2VhcmNo",
-            "UGFydBgIIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2ZXIuQWN0aXZpdHlTZWFy",
-            "Y2hQYXJ0UmVxdWVzdEgAEmYKH3N0YXJ0TmVpZ2hib3Job29kSW5pdGlhbGl6",
-            "YXRpb24YCSABKAsyOy5pb3AucHJveGltaXR5c2VydmVyLlN0YXJ0TmVpZ2hi",
-            "b3Job29kSW5pdGlhbGl6YXRpb25SZXF1ZXN0SAASaAogZmluaXNoTmVpZ2hi",
-            "b3Job29kSW5pdGlhbGl6YXRpb24YCiABKAsyPC5pb3AucHJveGltaXR5c2Vy",
-            "dmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVxdWVzdEgA",
-            "EmgKIG5laWdoYm9yaG9vZFNoYXJlZEFjdGl2aXR5VXBkYXRlGAsgASgLMjwu",
-            "aW9wLnByb3hpbWl0eXNlcnZlci5OZWlnaGJvcmhvb2RTaGFyZWRBY3Rpdml0",
-            "eVVwZGF0ZVJlcXVlc3RIABJWChdzdG9wTmVpZ2hib3Job29kVXBkYXRlcxgM",
-            "IAEoCzIzLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RvcE5laWdoYm9yaG9vZFVw",
-            "ZGF0ZXNSZXF1ZXN0SABCDQoLUmVxdWVzdFR5cGUixAcKFENvbnZlcnNhdGlv",
-            "blJlc3BvbnNlEhEKCXNpZ25hdHVyZRgBIAEoDBI/CgVzdGFydBgCIAEoCzIu",
-            "LmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RhcnRDb252ZXJzYXRpb25SZXNwb25z",
-            "ZUgAEkUKDnZlcmlmeUlkZW50aXR5GAMgASgLMisuaW9wLnByb3hpbWl0eXNl",
-            "cnZlci5WZXJpZnlJZGVudGl0eVJlc3BvbnNlSAASRQoOY3JlYXRlQWN0aXZp",
-            "dHkYBCABKAsyKy5pb3AucHJveGltaXR5c2VydmVyLkNyZWF0ZUFjdGl2aXR5",
-            "UmVzcG9uc2VIABJFCg51cGRhdGVBY3Rpdml0eRgFIAEoCzIrLmlvcC5wcm94",
-            "aW1pdHlzZXJ2ZXIuVXBkYXRlQWN0aXZpdHlSZXNwb25zZUgAEkUKDmRlbGV0",
-            "ZUFjdGl2aXR5GAYgASgLMisuaW9wLnByb3hpbWl0eXNlcnZlci5EZWxldGVB",
-            "Y3Rpdml0eVJlc3BvbnNlSAASRQoOYWN0aXZpdHlTZWFyY2gYByABKAsyKy5p",
+            "dml0eUluZm9ybWF0aW9uUmVxdWVzdEgAEkQKDmFjdGl2aXR5U2VhcmNoGAUg",
+            "ASgLMiouaW9wLnByb3hpbWl0eXNlcnZlci5BY3Rpdml0eVNlYXJjaFJlcXVl",
+            "c3RIABJMChJhY3Rpdml0eVNlYXJjaFBhcnQYBiABKAsyLi5pb3AucHJveGlt",
+            "aXR5c2VydmVyLkFjdGl2aXR5U2VhcmNoUGFydFJlcXVlc3RIAEINCgtSZXF1",
+            "ZXN0VHlwZSKOAwoOU2luZ2xlUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEoDBIx",
+            "CgRwaW5nGAIgASgLMiEuaW9wLnByb3hpbWl0eXNlcnZlci5QaW5nUmVzcG9u",
+            "c2VIABI7CglsaXN0Um9sZXMYAyABKAsyJi5pb3AucHJveGltaXR5c2VydmVy",
+            "Lkxpc3RSb2xlc1Jlc3BvbnNlSAASVQoWZ2V0QWN0aXZpdHlJbmZvcm1hdGlv",
+            "bhgEIAEoCzIzLmlvcC5wcm94aW1pdHlzZXJ2ZXIuR2V0QWN0aXZpdHlJbmZv",
+            "cm1hdGlvblJlc3BvbnNlSAASRQoOYWN0aXZpdHlTZWFyY2gYBSABKAsyKy5p",
             "b3AucHJveGltaXR5c2VydmVyLkFjdGl2aXR5U2VhcmNoUmVzcG9uc2VIABJN",
-            "ChJhY3Rpdml0eVNlYXJjaFBhcnQYCCABKAsyLy5pb3AucHJveGltaXR5c2Vy",
-            "dmVyLkFjdGl2aXR5U2VhcmNoUGFydFJlc3BvbnNlSAASZwofc3RhcnROZWln",
-            "aGJvcmhvb2RJbml0aWFsaXphdGlvbhgJIAEoCzI8LmlvcC5wcm94aW1pdHlz",
+            "ChJhY3Rpdml0eVNlYXJjaFBhcnQYBiABKAsyLy5pb3AucHJveGltaXR5c2Vy",
+            "dmVyLkFjdGl2aXR5U2VhcmNoUGFydFJlc3BvbnNlSABCDgoMUmVzcG9uc2VU",
+            "eXBlIqMGChNDb252ZXJzYXRpb25SZXF1ZXN0EhEKCXNpZ25hdHVyZRgBIAEo",
+            "DBI+CgVzdGFydBgCIAEoCzItLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RhcnRD",
+            "b252ZXJzYXRpb25SZXF1ZXN0SAASRAoOdmVyaWZ5SWRlbnRpdHkYAyABKAsy",
+            "Ki5pb3AucHJveGltaXR5c2VydmVyLlZlcmlmeUlkZW50aXR5UmVxdWVzdEgA",
+            "EkQKDmNyZWF0ZUFjdGl2aXR5GAQgASgLMiouaW9wLnByb3hpbWl0eXNlcnZl",
+            "ci5DcmVhdGVBY3Rpdml0eVJlcXVlc3RIABJECg51cGRhdGVBY3Rpdml0eRgF",
+            "IAEoCzIqLmlvcC5wcm94aW1pdHlzZXJ2ZXIuVXBkYXRlQWN0aXZpdHlSZXF1",
+            "ZXN0SAASRAoOZGVsZXRlQWN0aXZpdHkYBiABKAsyKi5pb3AucHJveGltaXR5",
+            "c2VydmVyLkRlbGV0ZUFjdGl2aXR5UmVxdWVzdEgAEmYKH3N0YXJ0TmVpZ2hi",
+            "b3Job29kSW5pdGlhbGl6YXRpb24YCSABKAsyOy5pb3AucHJveGltaXR5c2Vy",
+            "dmVyLlN0YXJ0TmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25SZXF1ZXN0SAAS",
+            "aAogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YCiABKAsyPC5p",
+            "b3AucHJveGltaXR5c2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxp",
+            "emF0aW9uUmVxdWVzdEgAEmgKIG5laWdoYm9yaG9vZFNoYXJlZEFjdGl2aXR5",
+            "VXBkYXRlGAsgASgLMjwuaW9wLnByb3hpbWl0eXNlcnZlci5OZWlnaGJvcmhv",
+            "b2RTaGFyZWRBY3Rpdml0eVVwZGF0ZVJlcXVlc3RIABJWChdzdG9wTmVpZ2hi",
+            "b3Job29kVXBkYXRlcxgMIAEoCzIzLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3Rv",
+            "cE5laWdoYm9yaG9vZFVwZGF0ZXNSZXF1ZXN0SABCDQoLUmVxdWVzdFR5cGUi",
+            "rgYKFENvbnZlcnNhdGlvblJlc3BvbnNlEhEKCXNpZ25hdHVyZRgBIAEoDBI/",
+            "CgVzdGFydBgCIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RhcnRDb252",
+            "ZXJzYXRpb25SZXNwb25zZUgAEkUKDnZlcmlmeUlkZW50aXR5GAMgASgLMisu",
+            "aW9wLnByb3hpbWl0eXNlcnZlci5WZXJpZnlJZGVudGl0eVJlc3BvbnNlSAAS",
+            "RQoOY3JlYXRlQWN0aXZpdHkYBCABKAsyKy5pb3AucHJveGltaXR5c2VydmVy",
+            "LkNyZWF0ZUFjdGl2aXR5UmVzcG9uc2VIABJFCg51cGRhdGVBY3Rpdml0eRgF",
+            "IAEoCzIrLmlvcC5wcm94aW1pdHlzZXJ2ZXIuVXBkYXRlQWN0aXZpdHlSZXNw",
+            "b25zZUgAEkUKDmRlbGV0ZUFjdGl2aXR5GAYgASgLMisuaW9wLnByb3hpbWl0",
+            "eXNlcnZlci5EZWxldGVBY3Rpdml0eVJlc3BvbnNlSAASZwofc3RhcnROZWln",
+            "aGJvcmhvb2RJbml0aWFsaXphdGlvbhgHIAEoCzI8LmlvcC5wcm94aW1pdHlz",
             "ZXJ2ZXIuU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlc3BvbnNl",
-            "SAASaQogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YCiABKAsy",
+            "SAASaQogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YCCABKAsy",
             "PS5pb3AucHJveGltaXR5c2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRp",
             "YWxpemF0aW9uUmVzcG9uc2VIABJpCiBuZWlnaGJvcmhvb2RTaGFyZWRBY3Rp",
-            "dml0eVVwZGF0ZRgLIAEoCzI9LmlvcC5wcm94aW1pdHlzZXJ2ZXIuTmVpZ2hi",
+            "dml0eVVwZGF0ZRgJIAEoCzI9LmlvcC5wcm94aW1pdHlzZXJ2ZXIuTmVpZ2hi",
             "b3Job29kU2hhcmVkQWN0aXZpdHlVcGRhdGVSZXNwb25zZUgAElcKF3N0b3BO",
-            "ZWlnaGJvcmhvb2RVcGRhdGVzGAwgASgLMjQuaW9wLnByb3hpbWl0eXNlcnZl",
+            "ZWlnaGJvcmhvb2RVcGRhdGVzGAogASgLMjQuaW9wLnByb3hpbWl0eXNlcnZl",
             "ci5TdG9wTmVpZ2hib3Job29kVXBkYXRlc1Jlc3BvbnNlSABCDgoMUmVzcG9u",
             "c2VUeXBlIh4KC1BpbmdSZXF1ZXN0Eg8KB3BheWxvYWQYASABKAwiLgoMUGlu",
             "Z1Jlc3BvbnNlEg8KB3BheWxvYWQYASABKAwSDQoFY2xvY2sYAiABKBIiEgoQ",
@@ -178,10 +178,10 @@ namespace Iop.Proximityserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.Message), global::Iop.Proximityserver.Message.Parser, new[]{ "Id", "Request", "Response" }, new[]{ "MessageType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.Request), global::Iop.Proximityserver.Request.Parser, new[]{ "SingleRequest", "ConversationRequest" }, new[]{ "ConversationType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.Response), global::Iop.Proximityserver.Response.Parser, new[]{ "Status", "Timestamp", "Details", "SingleResponse", "ConversationResponse" }, new[]{ "ConversationType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SingleRequest), global::Iop.Proximityserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "GetActivityInformation" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SingleResponse), global::Iop.Proximityserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "GetActivityInformation" }, new[]{ "ResponseType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ConversationRequest), global::Iop.Proximityserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "VerifyIdentity", "CreateActivity", "UpdateActivity", "DeleteActivity", "ActivitySearch", "ActivitySearchPart", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedActivityUpdate", "StopNeighborhoodUpdates" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ConversationResponse), global::Iop.Proximityserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "VerifyIdentity", "CreateActivity", "UpdateActivity", "DeleteActivity", "ActivitySearch", "ActivitySearchPart", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedActivityUpdate", "StopNeighborhoodUpdates" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SingleRequest), global::Iop.Proximityserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "GetActivityInformation", "ActivitySearch", "ActivitySearchPart" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.SingleResponse), global::Iop.Proximityserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "GetActivityInformation", "ActivitySearch", "ActivitySearchPart" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ConversationRequest), global::Iop.Proximityserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "VerifyIdentity", "CreateActivity", "UpdateActivity", "DeleteActivity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedActivityUpdate", "StopNeighborhoodUpdates" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ConversationResponse), global::Iop.Proximityserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "VerifyIdentity", "CreateActivity", "UpdateActivity", "DeleteActivity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedActivityUpdate", "StopNeighborhoodUpdates" }, new[]{ "ResponseType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.PingRequest), global::Iop.Proximityserver.PingRequest.Parser, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.PingResponse), global::Iop.Proximityserver.PingResponse.Parser, new[]{ "Payload", "Clock" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Proximityserver.ListRolesRequest), global::Iop.Proximityserver.ListRolesRequest.Parser, null, null, null, null),
@@ -1167,6 +1167,12 @@ namespace Iop.Proximityserver {
         case RequestTypeOneofCase.GetActivityInformation:
           GetActivityInformation = other.GetActivityInformation.Clone();
           break;
+        case RequestTypeOneofCase.ActivitySearch:
+          ActivitySearch = other.ActivitySearch.Clone();
+          break;
+        case RequestTypeOneofCase.ActivitySearchPart:
+          ActivitySearchPart = other.ActivitySearchPart.Clone();
+          break;
       }
 
     }
@@ -1223,6 +1229,28 @@ namespace Iop.Proximityserver {
       }
     }
 
+    /// <summary>Field number for the "activitySearch" field.</summary>
+    public const int ActivitySearchFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivitySearchRequest ActivitySearch {
+      get { return requestTypeCase_ == RequestTypeOneofCase.ActivitySearch ? (global::Iop.Proximityserver.ActivitySearchRequest) requestType_ : null; }
+      set {
+        requestType_ = value;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ActivitySearch;
+      }
+    }
+
+    /// <summary>Field number for the "activitySearchPart" field.</summary>
+    public const int ActivitySearchPartFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivitySearchPartRequest ActivitySearchPart {
+      get { return requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart ? (global::Iop.Proximityserver.ActivitySearchPartRequest) requestType_ : null; }
+      set {
+        requestType_ = value;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ActivitySearchPart;
+      }
+    }
+
     private object requestType_;
     /// <summary>Enum of possible cases for the "RequestType" oneof.</summary>
     public enum RequestTypeOneofCase {
@@ -1230,6 +1258,8 @@ namespace Iop.Proximityserver {
       Ping = 2,
       ListRoles = 3,
       GetActivityInformation = 4,
+      ActivitySearch = 5,
+      ActivitySearchPart = 6,
     }
     private RequestTypeOneofCase requestTypeCase_ = RequestTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1260,6 +1290,8 @@ namespace Iop.Proximityserver {
       if (!object.Equals(Ping, other.Ping)) return false;
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(GetActivityInformation, other.GetActivityInformation)) return false;
+      if (!object.Equals(ActivitySearch, other.ActivitySearch)) return false;
+      if (!object.Equals(ActivitySearchPart, other.ActivitySearchPart)) return false;
       if (RequestTypeCase != other.RequestTypeCase) return false;
       return true;
     }
@@ -1271,6 +1303,8 @@ namespace Iop.Proximityserver {
       if (requestTypeCase_ == RequestTypeOneofCase.Ping) hash ^= Ping.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.GetActivityInformation) hash ^= GetActivityInformation.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) hash ^= ActivitySearch.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) hash ^= ActivitySearchPart.GetHashCode();
       hash ^= (int) requestTypeCase_;
       return hash;
     }
@@ -1298,6 +1332,14 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(34);
         output.WriteMessage(GetActivityInformation);
       }
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ActivitySearch);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ActivitySearchPart);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1314,6 +1356,12 @@ namespace Iop.Proximityserver {
       }
       if (requestTypeCase_ == RequestTypeOneofCase.GetActivityInformation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetActivityInformation);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearch);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearchPart);
       }
       return size;
     }
@@ -1335,6 +1383,12 @@ namespace Iop.Proximityserver {
           break;
         case RequestTypeOneofCase.GetActivityInformation:
           GetActivityInformation = other.GetActivityInformation;
+          break;
+        case RequestTypeOneofCase.ActivitySearch:
+          ActivitySearch = other.ActivitySearch;
+          break;
+        case RequestTypeOneofCase.ActivitySearchPart:
+          ActivitySearchPart = other.ActivitySearchPart;
           break;
       }
 
@@ -1377,6 +1431,24 @@ namespace Iop.Proximityserver {
             }
             input.ReadMessage(subBuilder);
             GetActivityInformation = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Iop.Proximityserver.ActivitySearchRequest subBuilder = new global::Iop.Proximityserver.ActivitySearchRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
+              subBuilder.MergeFrom(ActivitySearch);
+            }
+            input.ReadMessage(subBuilder);
+            ActivitySearch = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Iop.Proximityserver.ActivitySearchPartRequest subBuilder = new global::Iop.Proximityserver.ActivitySearchPartRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
+              subBuilder.MergeFrom(ActivitySearchPart);
+            }
+            input.ReadMessage(subBuilder);
+            ActivitySearchPart = subBuilder;
             break;
           }
         }
@@ -1422,6 +1494,12 @@ namespace Iop.Proximityserver {
           break;
         case ResponseTypeOneofCase.GetActivityInformation:
           GetActivityInformation = other.GetActivityInformation.Clone();
+          break;
+        case ResponseTypeOneofCase.ActivitySearch:
+          ActivitySearch = other.ActivitySearch.Clone();
+          break;
+        case ResponseTypeOneofCase.ActivitySearchPart:
+          ActivitySearchPart = other.ActivitySearchPart.Clone();
           break;
       }
 
@@ -1479,6 +1557,28 @@ namespace Iop.Proximityserver {
       }
     }
 
+    /// <summary>Field number for the "activitySearch" field.</summary>
+    public const int ActivitySearchFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivitySearchResponse ActivitySearch {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch ? (global::Iop.Proximityserver.ActivitySearchResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ActivitySearch;
+      }
+    }
+
+    /// <summary>Field number for the "activitySearchPart" field.</summary>
+    public const int ActivitySearchPartFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Proximityserver.ActivitySearchPartResponse ActivitySearchPart {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart ? (global::Iop.Proximityserver.ActivitySearchPartResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ActivitySearchPart;
+      }
+    }
+
     private object responseType_;
     /// <summary>Enum of possible cases for the "ResponseType" oneof.</summary>
     public enum ResponseTypeOneofCase {
@@ -1486,6 +1586,8 @@ namespace Iop.Proximityserver {
       Ping = 2,
       ListRoles = 3,
       GetActivityInformation = 4,
+      ActivitySearch = 5,
+      ActivitySearchPart = 6,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1516,6 +1618,8 @@ namespace Iop.Proximityserver {
       if (!object.Equals(Ping, other.Ping)) return false;
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(GetActivityInformation, other.GetActivityInformation)) return false;
+      if (!object.Equals(ActivitySearch, other.ActivitySearch)) return false;
+      if (!object.Equals(ActivitySearchPart, other.ActivitySearchPart)) return false;
       if (ResponseTypeCase != other.ResponseTypeCase) return false;
       return true;
     }
@@ -1527,6 +1631,8 @@ namespace Iop.Proximityserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.Ping) hash ^= Ping.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.GetActivityInformation) hash ^= GetActivityInformation.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) hash ^= ActivitySearch.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) hash ^= ActivitySearchPart.GetHashCode();
       hash ^= (int) responseTypeCase_;
       return hash;
     }
@@ -1554,6 +1660,14 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(34);
         output.WriteMessage(GetActivityInformation);
       }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ActivitySearch);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
+        output.WriteRawTag(50);
+        output.WriteMessage(ActivitySearchPart);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1570,6 +1684,12 @@ namespace Iop.Proximityserver {
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.GetActivityInformation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetActivityInformation);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearch);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearchPart);
       }
       return size;
     }
@@ -1591,6 +1711,12 @@ namespace Iop.Proximityserver {
           break;
         case ResponseTypeOneofCase.GetActivityInformation:
           GetActivityInformation = other.GetActivityInformation;
+          break;
+        case ResponseTypeOneofCase.ActivitySearch:
+          ActivitySearch = other.ActivitySearch;
+          break;
+        case ResponseTypeOneofCase.ActivitySearchPart:
+          ActivitySearchPart = other.ActivitySearchPart;
           break;
       }
 
@@ -1633,6 +1759,24 @@ namespace Iop.Proximityserver {
             }
             input.ReadMessage(subBuilder);
             GetActivityInformation = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Iop.Proximityserver.ActivitySearchResponse subBuilder = new global::Iop.Proximityserver.ActivitySearchResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
+              subBuilder.MergeFrom(ActivitySearch);
+            }
+            input.ReadMessage(subBuilder);
+            ActivitySearch = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Iop.Proximityserver.ActivitySearchPartResponse subBuilder = new global::Iop.Proximityserver.ActivitySearchPartResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
+              subBuilder.MergeFrom(ActivitySearchPart);
+            }
+            input.ReadMessage(subBuilder);
+            ActivitySearchPart = subBuilder;
             break;
           }
         }
@@ -1685,12 +1829,6 @@ namespace Iop.Proximityserver {
           break;
         case RequestTypeOneofCase.DeleteActivity:
           DeleteActivity = other.DeleteActivity.Clone();
-          break;
-        case RequestTypeOneofCase.ActivitySearch:
-          ActivitySearch = other.ActivitySearch.Clone();
-          break;
-        case RequestTypeOneofCase.ActivitySearchPart:
-          ActivitySearchPart = other.ActivitySearchPart.Clone();
           break;
         case RequestTypeOneofCase.StartNeighborhoodInitialization:
           StartNeighborhoodInitialization = other.StartNeighborhoodInitialization.Clone();
@@ -1785,28 +1923,6 @@ namespace Iop.Proximityserver {
       }
     }
 
-    /// <summary>Field number for the "activitySearch" field.</summary>
-    public const int ActivitySearchFieldNumber = 7;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ActivitySearchRequest ActivitySearch {
-      get { return requestTypeCase_ == RequestTypeOneofCase.ActivitySearch ? (global::Iop.Proximityserver.ActivitySearchRequest) requestType_ : null; }
-      set {
-        requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ActivitySearch;
-      }
-    }
-
-    /// <summary>Field number for the "activitySearchPart" field.</summary>
-    public const int ActivitySearchPartFieldNumber = 8;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ActivitySearchPartRequest ActivitySearchPart {
-      get { return requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart ? (global::Iop.Proximityserver.ActivitySearchPartRequest) requestType_ : null; }
-      set {
-        requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ActivitySearchPart;
-      }
-    }
-
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
     public const int StartNeighborhoodInitializationFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1860,8 +1976,6 @@ namespace Iop.Proximityserver {
       CreateActivity = 4,
       UpdateActivity = 5,
       DeleteActivity = 6,
-      ActivitySearch = 7,
-      ActivitySearchPart = 8,
       StartNeighborhoodInitialization = 9,
       FinishNeighborhoodInitialization = 10,
       NeighborhoodSharedActivityUpdate = 11,
@@ -1898,8 +2012,6 @@ namespace Iop.Proximityserver {
       if (!object.Equals(CreateActivity, other.CreateActivity)) return false;
       if (!object.Equals(UpdateActivity, other.UpdateActivity)) return false;
       if (!object.Equals(DeleteActivity, other.DeleteActivity)) return false;
-      if (!object.Equals(ActivitySearch, other.ActivitySearch)) return false;
-      if (!object.Equals(ActivitySearchPart, other.ActivitySearchPart)) return false;
       if (!object.Equals(StartNeighborhoodInitialization, other.StartNeighborhoodInitialization)) return false;
       if (!object.Equals(FinishNeighborhoodInitialization, other.FinishNeighborhoodInitialization)) return false;
       if (!object.Equals(NeighborhoodSharedActivityUpdate, other.NeighborhoodSharedActivityUpdate)) return false;
@@ -1917,8 +2029,6 @@ namespace Iop.Proximityserver {
       if (requestTypeCase_ == RequestTypeOneofCase.CreateActivity) hash ^= CreateActivity.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.UpdateActivity) hash ^= UpdateActivity.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.DeleteActivity) hash ^= DeleteActivity.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) hash ^= ActivitySearch.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) hash ^= ActivitySearchPart.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) hash ^= StartNeighborhoodInitialization.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) hash ^= FinishNeighborhoodInitialization.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedActivityUpdate) hash ^= NeighborhoodSharedActivityUpdate.GetHashCode();
@@ -1957,14 +2067,6 @@ namespace Iop.Proximityserver {
       if (requestTypeCase_ == RequestTypeOneofCase.DeleteActivity) {
         output.WriteRawTag(50);
         output.WriteMessage(DeleteActivity);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
-        output.WriteRawTag(58);
-        output.WriteMessage(ActivitySearch);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
-        output.WriteRawTag(66);
-        output.WriteMessage(ActivitySearchPart);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
         output.WriteRawTag(74);
@@ -2005,12 +2107,6 @@ namespace Iop.Proximityserver {
       if (requestTypeCase_ == RequestTypeOneofCase.DeleteActivity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeleteActivity);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearch);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearchPart);
-      }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
       }
@@ -2049,12 +2145,6 @@ namespace Iop.Proximityserver {
           break;
         case RequestTypeOneofCase.DeleteActivity:
           DeleteActivity = other.DeleteActivity;
-          break;
-        case RequestTypeOneofCase.ActivitySearch:
-          ActivitySearch = other.ActivitySearch;
-          break;
-        case RequestTypeOneofCase.ActivitySearchPart:
-          ActivitySearchPart = other.ActivitySearchPart;
           break;
         case RequestTypeOneofCase.StartNeighborhoodInitialization:
           StartNeighborhoodInitialization = other.StartNeighborhoodInitialization;
@@ -2127,24 +2217,6 @@ namespace Iop.Proximityserver {
             }
             input.ReadMessage(subBuilder);
             DeleteActivity = subBuilder;
-            break;
-          }
-          case 58: {
-            global::Iop.Proximityserver.ActivitySearchRequest subBuilder = new global::Iop.Proximityserver.ActivitySearchRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearch) {
-              subBuilder.MergeFrom(ActivitySearch);
-            }
-            input.ReadMessage(subBuilder);
-            ActivitySearch = subBuilder;
-            break;
-          }
-          case 66: {
-            global::Iop.Proximityserver.ActivitySearchPartRequest subBuilder = new global::Iop.Proximityserver.ActivitySearchPartRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.ActivitySearchPart) {
-              subBuilder.MergeFrom(ActivitySearchPart);
-            }
-            input.ReadMessage(subBuilder);
-            ActivitySearchPart = subBuilder;
             break;
           }
           case 74: {
@@ -2232,12 +2304,6 @@ namespace Iop.Proximityserver {
           break;
         case ResponseTypeOneofCase.DeleteActivity:
           DeleteActivity = other.DeleteActivity.Clone();
-          break;
-        case ResponseTypeOneofCase.ActivitySearch:
-          ActivitySearch = other.ActivitySearch.Clone();
-          break;
-        case ResponseTypeOneofCase.ActivitySearchPart:
-          ActivitySearchPart = other.ActivitySearchPart.Clone();
           break;
         case ResponseTypeOneofCase.StartNeighborhoodInitialization:
           StartNeighborhoodInitialization = other.StartNeighborhoodInitialization.Clone();
@@ -2332,30 +2398,8 @@ namespace Iop.Proximityserver {
       }
     }
 
-    /// <summary>Field number for the "activitySearch" field.</summary>
-    public const int ActivitySearchFieldNumber = 7;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ActivitySearchResponse ActivitySearch {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch ? (global::Iop.Proximityserver.ActivitySearchResponse) responseType_ : null; }
-      set {
-        responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ActivitySearch;
-      }
-    }
-
-    /// <summary>Field number for the "activitySearchPart" field.</summary>
-    public const int ActivitySearchPartFieldNumber = 8;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Proximityserver.ActivitySearchPartResponse ActivitySearchPart {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart ? (global::Iop.Proximityserver.ActivitySearchPartResponse) responseType_ : null; }
-      set {
-        responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ActivitySearchPart;
-      }
-    }
-
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
-    public const int StartNeighborhoodInitializationFieldNumber = 9;
+    public const int StartNeighborhoodInitializationFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StartNeighborhoodInitializationResponse StartNeighborhoodInitialization {
       get { return responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization ? (global::Iop.Proximityserver.StartNeighborhoodInitializationResponse) responseType_ : null; }
@@ -2366,7 +2410,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "finishNeighborhoodInitialization" field.</summary>
-    public const int FinishNeighborhoodInitializationFieldNumber = 10;
+    public const int FinishNeighborhoodInitializationFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse FinishNeighborhoodInitialization {
       get { return responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization ? (global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse) responseType_ : null; }
@@ -2377,7 +2421,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "neighborhoodSharedActivityUpdate" field.</summary>
-    public const int NeighborhoodSharedActivityUpdateFieldNumber = 11;
+    public const int NeighborhoodSharedActivityUpdateFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse NeighborhoodSharedActivityUpdate {
       get { return responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedActivityUpdate ? (global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse) responseType_ : null; }
@@ -2388,7 +2432,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "stopNeighborhoodUpdates" field.</summary>
-    public const int StopNeighborhoodUpdatesFieldNumber = 12;
+    public const int StopNeighborhoodUpdatesFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse StopNeighborhoodUpdates {
       get { return responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates ? (global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse) responseType_ : null; }
@@ -2407,12 +2451,10 @@ namespace Iop.Proximityserver {
       CreateActivity = 4,
       UpdateActivity = 5,
       DeleteActivity = 6,
-      ActivitySearch = 7,
-      ActivitySearchPart = 8,
-      StartNeighborhoodInitialization = 9,
-      FinishNeighborhoodInitialization = 10,
-      NeighborhoodSharedActivityUpdate = 11,
-      StopNeighborhoodUpdates = 12,
+      StartNeighborhoodInitialization = 7,
+      FinishNeighborhoodInitialization = 8,
+      NeighborhoodSharedActivityUpdate = 9,
+      StopNeighborhoodUpdates = 10,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2445,8 +2487,6 @@ namespace Iop.Proximityserver {
       if (!object.Equals(CreateActivity, other.CreateActivity)) return false;
       if (!object.Equals(UpdateActivity, other.UpdateActivity)) return false;
       if (!object.Equals(DeleteActivity, other.DeleteActivity)) return false;
-      if (!object.Equals(ActivitySearch, other.ActivitySearch)) return false;
-      if (!object.Equals(ActivitySearchPart, other.ActivitySearchPart)) return false;
       if (!object.Equals(StartNeighborhoodInitialization, other.StartNeighborhoodInitialization)) return false;
       if (!object.Equals(FinishNeighborhoodInitialization, other.FinishNeighborhoodInitialization)) return false;
       if (!object.Equals(NeighborhoodSharedActivityUpdate, other.NeighborhoodSharedActivityUpdate)) return false;
@@ -2464,8 +2504,6 @@ namespace Iop.Proximityserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.CreateActivity) hash ^= CreateActivity.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.UpdateActivity) hash ^= UpdateActivity.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.DeleteActivity) hash ^= DeleteActivity.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) hash ^= ActivitySearch.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) hash ^= ActivitySearchPart.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) hash ^= StartNeighborhoodInitialization.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) hash ^= FinishNeighborhoodInitialization.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedActivityUpdate) hash ^= NeighborhoodSharedActivityUpdate.GetHashCode();
@@ -2505,28 +2543,20 @@ namespace Iop.Proximityserver {
         output.WriteRawTag(50);
         output.WriteMessage(DeleteActivity);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
-        output.WriteRawTag(58);
-        output.WriteMessage(ActivitySearch);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
-        output.WriteRawTag(66);
-        output.WriteMessage(ActivitySearchPart);
-      }
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(58);
         output.WriteMessage(StartNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
-        output.WriteRawTag(82);
+        output.WriteRawTag(66);
         output.WriteMessage(FinishNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedActivityUpdate) {
-        output.WriteRawTag(90);
+        output.WriteRawTag(74);
         output.WriteMessage(NeighborhoodSharedActivityUpdate);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates) {
-        output.WriteRawTag(98);
+        output.WriteRawTag(82);
         output.WriteMessage(StopNeighborhoodUpdates);
       }
     }
@@ -2551,12 +2581,6 @@ namespace Iop.Proximityserver {
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.DeleteActivity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeleteActivity);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearch);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivitySearchPart);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
@@ -2596,12 +2620,6 @@ namespace Iop.Proximityserver {
           break;
         case ResponseTypeOneofCase.DeleteActivity:
           DeleteActivity = other.DeleteActivity;
-          break;
-        case ResponseTypeOneofCase.ActivitySearch:
-          ActivitySearch = other.ActivitySearch;
-          break;
-        case ResponseTypeOneofCase.ActivitySearchPart:
-          ActivitySearchPart = other.ActivitySearchPart;
           break;
         case ResponseTypeOneofCase.StartNeighborhoodInitialization:
           StartNeighborhoodInitialization = other.StartNeighborhoodInitialization;
@@ -2677,24 +2695,6 @@ namespace Iop.Proximityserver {
             break;
           }
           case 58: {
-            global::Iop.Proximityserver.ActivitySearchResponse subBuilder = new global::Iop.Proximityserver.ActivitySearchResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearch) {
-              subBuilder.MergeFrom(ActivitySearch);
-            }
-            input.ReadMessage(subBuilder);
-            ActivitySearch = subBuilder;
-            break;
-          }
-          case 66: {
-            global::Iop.Proximityserver.ActivitySearchPartResponse subBuilder = new global::Iop.Proximityserver.ActivitySearchPartResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.ActivitySearchPart) {
-              subBuilder.MergeFrom(ActivitySearchPart);
-            }
-            input.ReadMessage(subBuilder);
-            ActivitySearchPart = subBuilder;
-            break;
-          }
-          case 74: {
             global::Iop.Proximityserver.StartNeighborhoodInitializationResponse subBuilder = new global::Iop.Proximityserver.StartNeighborhoodInitializationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
               subBuilder.MergeFrom(StartNeighborhoodInitialization);
@@ -2703,7 +2703,7 @@ namespace Iop.Proximityserver {
             StartNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 82: {
+          case 66: {
             global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse subBuilder = new global::Iop.Proximityserver.FinishNeighborhoodInitializationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
               subBuilder.MergeFrom(FinishNeighborhoodInitialization);
@@ -2712,7 +2712,7 @@ namespace Iop.Proximityserver {
             FinishNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 90: {
+          case 74: {
             global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse subBuilder = new global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedActivityUpdate) {
               subBuilder.MergeFrom(NeighborhoodSharedActivityUpdate);
@@ -2721,7 +2721,7 @@ namespace Iop.Proximityserver {
             NeighborhoodSharedActivityUpdate = subBuilder;
             break;
           }
-          case 98: {
+          case 82: {
             global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse subBuilder = new global::Iop.Proximityserver.StopNeighborhoodUpdatesResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates) {
               subBuilder.MergeFrom(StopNeighborhoodUpdates);
@@ -4255,6 +4255,7 @@ namespace Iop.Proximityserver {
   ///  A response to CreateActivityRequest.
   ///
   ///  Specific Error Responses:
+  ///    * ERROR_QUOTA_EXCEEDED - A server uses this error code in case it wants to express that it will not accept any new activities because it has no free slots.
   ///    * ERROR_ALREADY_EXISTS - The server already has an activity from the client with 'CreateActivityRequest.id' as its identifier.
   ///    * ERROR_INVALID_SIGNATURE - The client's signature of the 'CreateActivityRequest.activity' in 'ConversationRequest.signature' is not valid.
   ///    * ERROR_REJECTED - The server knows a proximity server that is closer to the location of the activity and its ID is not on the list of ignored servers.
@@ -5989,7 +5990,7 @@ namespace Iop.Proximityserver {
   ///
   ///  Each search request only produces a limited number of results. The maximal size of the first set of results 
   ///  is provided by 'maxResponseRecordCount' field. The response to this message contains up to 'maxResponseRecordCount' 
-  ///  results. If there are more results available, they are saved to the conversation context, which enables the client 
+  ///  results. If there are more results available, they are saved to the server's cache, which enables the client 
   ///  to obtain more results with subsequent ActivitySearchPartRequest messages.
   ///
   ///  The proximity server will not save more than 'maxTotalRecordCount' search requests. 

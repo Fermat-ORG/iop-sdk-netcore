@@ -37,111 +37,111 @@ namespace Iop.Profileserver {
             "aW5nbGVSZXNwb25zZRgIIAEoCzIhLmlvcC5wcm9maWxlc2VydmVyLlNpbmds",
             "ZVJlc3BvbnNlSAASRwoUY29udmVyc2F0aW9uUmVzcG9uc2UYCSABKAsyJy5p",
             "b3AucHJvZmlsZXNlcnZlci5Db252ZXJzYXRpb25SZXNwb25zZUgAQhIKEENv",
-            "bnZlcnNhdGlvblR5cGUiwwUKDVNpbmdsZVJlcXVlc3QSDwoHdmVyc2lvbhgB",
+            "bnZlcnNhdGlvblR5cGUizwYKDVNpbmdsZVJlcXVlc3QSDwoHdmVyc2lvbhgB",
             "IAEoDBIuCgRwaW5nGAIgASgLMh4uaW9wLnByb2ZpbGVzZXJ2ZXIuUGluZ1Jl",
             "cXVlc3RIABI4CglsaXN0Um9sZXMYAyABKAsyIy5pb3AucHJvZmlsZXNlcnZl",
             "ci5MaXN0Um9sZXNSZXF1ZXN0SAASRgoQbGlzdEhvc3RpbmdQbGFucxgEIAEo",
             "CzIqLmlvcC5wcm9maWxlc2VydmVyLkxpc3RIb3N0aW5nUGxhbnNSZXF1ZXN0",
             "SAASUAoVZ2V0UHJvZmlsZUluZm9ybWF0aW9uGAUgASgLMi8uaW9wLnByb2Zp",
-            "bGVzZXJ2ZXIuR2V0UHJvZmlsZUluZm9ybWF0aW9uUmVxdWVzdEgAEmAKHWFw",
-            "cGxpY2F0aW9uU2VydmljZVNlbmRNZXNzYWdlGAYgASgLMjcuaW9wLnByb2Zp",
-            "bGVzZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlU2VuZE1lc3NhZ2VSZXF1ZXN0",
-            "SAASfgosYXBwbGljYXRpb25TZXJ2aWNlUmVjZWl2ZU1lc3NhZ2VOb3RpZmlj",
-            "YXRpb24YByABKAsyRi5pb3AucHJvZmlsZXNlcnZlci5BcHBsaWNhdGlvblNl",
-            "cnZpY2VSZWNlaXZlTWVzc2FnZU5vdGlmaWNhdGlvblJlcXVlc3RIABI+Cgxw",
-            "cm9maWxlU3RhdHMYCCABKAsyJi5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxl",
-            "U3RhdHNSZXF1ZXN0SAASbAojZ2V0SWRlbnRpdHlSZWxhdGlvbnNoaXBzSW5m",
-            "b3JtYXRpb24YCSABKAsyPS5pb3AucHJvZmlsZXNlcnZlci5HZXRJZGVudGl0",
-            "eVJlbGF0aW9uc2hpcHNJbmZvcm1hdGlvblJlcXVlc3RIAEINCgtSZXF1ZXN0",
-            "VHlwZSLNBQoOU2luZ2xlUmVzcG9uc2USDwoHdmVyc2lvbhgBIAEoDBIvCgRw",
-            "aW5nGAIgASgLMh8uaW9wLnByb2ZpbGVzZXJ2ZXIuUGluZ1Jlc3BvbnNlSAAS",
-            "OQoJbGlzdFJvbGVzGAMgASgLMiQuaW9wLnByb2ZpbGVzZXJ2ZXIuTGlzdFJv",
-            "bGVzUmVzcG9uc2VIABJHChBsaXN0SG9zdGluZ1BsYW5zGAQgASgLMisuaW9w",
-            "LnByb2ZpbGVzZXJ2ZXIuTGlzdEhvc3RpbmdQbGFuc1Jlc3BvbnNlSAASUQoV",
-            "Z2V0UHJvZmlsZUluZm9ybWF0aW9uGAUgASgLMjAuaW9wLnByb2ZpbGVzZXJ2",
-            "ZXIuR2V0UHJvZmlsZUluZm9ybWF0aW9uUmVzcG9uc2VIABJhCh1hcHBsaWNh",
-            "dGlvblNlcnZpY2VTZW5kTWVzc2FnZRgGIAEoCzI4LmlvcC5wcm9maWxlc2Vy",
-            "dmVyLkFwcGxpY2F0aW9uU2VydmljZVNlbmRNZXNzYWdlUmVzcG9uc2VIABJ/",
-            "CixhcHBsaWNhdGlvblNlcnZpY2VSZWNlaXZlTWVzc2FnZU5vdGlmaWNhdGlv",
-            "bhgHIAEoCzJHLmlvcC5wcm9maWxlc2VydmVyLkFwcGxpY2F0aW9uU2Vydmlj",
-            "ZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVzcG9uc2VIABI/Cgxwcm9m",
-            "aWxlU3RhdHMYCCABKAsyJy5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU3Rh",
-            "dHNSZXNwb25zZUgAEm0KI2dldElkZW50aXR5UmVsYXRpb25zaGlwc0luZm9y",
-            "bWF0aW9uGAkgASgLMj4uaW9wLnByb2ZpbGVzZXJ2ZXIuR2V0SWRlbnRpdHlS",
-            "ZWxhdGlvbnNoaXBzSW5mb3JtYXRpb25SZXNwb25zZUgAQg4KDFJlc3BvbnNl",
-            "VHlwZSL1DAoTQ29udmVyc2F0aW9uUmVxdWVzdBIRCglzaWduYXR1cmUYASAB",
-            "KAwSPAoFc3RhcnQYAiABKAsyKy5pb3AucHJvZmlsZXNlcnZlci5TdGFydENv",
-            "bnZlcnNhdGlvblJlcXVlc3RIABJECg9yZWdpc3Rlckhvc3RpbmcYAyABKAsy",
-            "KS5pb3AucHJvZmlsZXNlcnZlci5SZWdpc3Rlckhvc3RpbmdSZXF1ZXN0SAAS",
-            "NAoHY2hlY2tJbhgEIAEoCzIhLmlvcC5wcm9maWxlc2VydmVyLkNoZWNrSW5S",
-            "ZXF1ZXN0SAASQgoOdmVyaWZ5SWRlbnRpdHkYBSABKAsyKC5pb3AucHJvZmls",
-            "ZXNlcnZlci5WZXJpZnlJZGVudGl0eVJlcXVlc3RIABJACg11cGRhdGVQcm9m",
-            "aWxlGAYgASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuVXBkYXRlUHJvZmlsZVJl",
-            "cXVlc3RIABJSChZjYW5jZWxIb3N0aW5nQWdyZWVtZW50GAcgASgLMjAuaW9w",
-            "LnByb2ZpbGVzZXJ2ZXIuQ2FuY2VsSG9zdGluZ0FncmVlbWVudFJlcXVlc3RI",
-            "ABJQChVhcHBsaWNhdGlvblNlcnZpY2VBZGQYCCABKAsyLy5pb3AucHJvZmls",
-            "ZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VBZGRSZXF1ZXN0SAASVgoYYXBw",
-            "bGljYXRpb25TZXJ2aWNlUmVtb3ZlGAkgASgLMjIuaW9wLnByb2ZpbGVzZXJ2",
-            "ZXIuQXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlUmVxdWVzdEgAEmIKHmNhbGxJ",
-            "ZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZRgKIAEoCzI4LmlvcC5wcm9maWxl",
-            "c2VydmVyLkNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZVJlcXVlc3RI",
-            "ABJWChhpbmNvbWluZ0NhbGxOb3RpZmljYXRpb24YCyABKAsyMi5pb3AucHJv",
-            "ZmlsZXNlcnZlci5JbmNvbWluZ0NhbGxOb3RpZmljYXRpb25SZXF1ZXN0SAAS",
-            "QAoNcHJvZmlsZVNlYXJjaBgMIAEoCzInLmlvcC5wcm9maWxlc2VydmVyLlBy",
-            "b2ZpbGVTZWFyY2hSZXF1ZXN0SAASSAoRcHJvZmlsZVNlYXJjaFBhcnQYDSAB",
-            "KAsyKy5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU2VhcmNoUGFydFJlcXVl",
-            "c3RIABJKChJhZGRSZWxhdGVkSWRlbnRpdHkYDiABKAsyLC5pb3AucHJvZmls",
-            "ZXNlcnZlci5BZGRSZWxhdGVkSWRlbnRpdHlSZXF1ZXN0SAASUAoVcmVtb3Zl",
-            "UmVsYXRlZElkZW50aXR5GA8gASgLMi8uaW9wLnByb2ZpbGVzZXJ2ZXIuUmVt",
-            "b3ZlUmVsYXRlZElkZW50aXR5UmVxdWVzdEgAEmQKH3N0YXJ0TmVpZ2hib3Jo",
-            "b29kSW5pdGlhbGl6YXRpb24YECABKAsyOS5pb3AucHJvZmlsZXNlcnZlci5T",
-            "dGFydE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVxdWVzdEgAEmYKIGZp",
-            "bmlzaE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uGBEgASgLMjouaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuRmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25S",
-            "ZXF1ZXN0SAASZAofbmVpZ2hib3Job29kU2hhcmVkUHJvZmlsZVVwZGF0ZRgS",
-            "IAEoCzI5LmlvcC5wcm9maWxlc2VydmVyLk5laWdoYm9yaG9vZFNoYXJlZFBy",
-            "b2ZpbGVVcGRhdGVSZXF1ZXN0SAASVAoXc3RvcE5laWdoYm9yaG9vZFVwZGF0",
-            "ZXMYEyABKAsyMS5pb3AucHJvZmlsZXNlcnZlci5TdG9wTmVpZ2hib3Job29k",
-            "VXBkYXRlc1JlcXVlc3RIABI+CgxjYW5TdG9yZURhdGEYFCABKAsyJi5pb3Au",
-            "cHJvZmlsZXNlcnZlci5DYW5TdG9yZURhdGFSZXF1ZXN0SAASTgoUY2FuUHVi",
-            "bGlzaElwbnNSZWNvcmQYFSABKAsyLi5pb3AucHJvZmlsZXNlcnZlci5DYW5Q",
-            "dWJsaXNoSXBuc1JlY29yZFJlcXVlc3RIAEINCgtSZXF1ZXN0VHlwZSKLDQoU",
-            "Q29udmVyc2F0aW9uUmVzcG9uc2USEQoJc2lnbmF0dXJlGAEgASgMEj0KBXN0",
-            "YXJ0GAIgASgLMiwuaW9wLnByb2ZpbGVzZXJ2ZXIuU3RhcnRDb252ZXJzYXRp",
-            "b25SZXNwb25zZUgAEkUKD3JlZ2lzdGVySG9zdGluZxgDIAEoCzIqLmlvcC5w",
-            "cm9maWxlc2VydmVyLlJlZ2lzdGVySG9zdGluZ1Jlc3BvbnNlSAASNQoHY2hl",
-            "Y2tJbhgEIAEoCzIiLmlvcC5wcm9maWxlc2VydmVyLkNoZWNrSW5SZXNwb25z",
-            "ZUgAEkMKDnZlcmlmeUlkZW50aXR5GAUgASgLMikuaW9wLnByb2ZpbGVzZXJ2",
-            "ZXIuVmVyaWZ5SWRlbnRpdHlSZXNwb25zZUgAEkEKDXVwZGF0ZVByb2ZpbGUY",
-            "BiABKAsyKC5pb3AucHJvZmlsZXNlcnZlci5VcGRhdGVQcm9maWxlUmVzcG9u",
-            "c2VIABJTChZjYW5jZWxIb3N0aW5nQWdyZWVtZW50GAcgASgLMjEuaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuQ2FuY2VsSG9zdGluZ0FncmVlbWVudFJlc3BvbnNlSAAS",
-            "UQoVYXBwbGljYXRpb25TZXJ2aWNlQWRkGAggASgLMjAuaW9wLnByb2ZpbGVz",
-            "ZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlQWRkUmVzcG9uc2VIABJXChhhcHBs",
-            "aWNhdGlvblNlcnZpY2VSZW1vdmUYCSABKAsyMy5pb3AucHJvZmlsZXNlcnZl",
-            "ci5BcHBsaWNhdGlvblNlcnZpY2VSZW1vdmVSZXNwb25zZUgAEmMKHmNhbGxJ",
-            "ZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZRgKIAEoCzI5LmlvcC5wcm9maWxl",
-            "c2VydmVyLkNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZVJlc3BvbnNl",
-            "SAASVwoYaW5jb21pbmdDYWxsTm90aWZpY2F0aW9uGAsgASgLMjMuaW9wLnBy",
-            "b2ZpbGVzZXJ2ZXIuSW5jb21pbmdDYWxsTm90aWZpY2F0aW9uUmVzcG9uc2VI",
-            "ABJBCg1wcm9maWxlU2VhcmNoGAwgASgLMiguaW9wLnByb2ZpbGVzZXJ2ZXIu",
-            "UHJvZmlsZVNlYXJjaFJlc3BvbnNlSAASSQoRcHJvZmlsZVNlYXJjaFBhcnQY",
-            "DSABKAsyLC5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxlU2VhcmNoUGFydFJl",
-            "c3BvbnNlSAASSwoSYWRkUmVsYXRlZElkZW50aXR5GA4gASgLMi0uaW9wLnBy",
+            "bGVzZXJ2ZXIuR2V0UHJvZmlsZUluZm9ybWF0aW9uUmVxdWVzdEgAEkAKDXBy",
+            "b2ZpbGVTZWFyY2gYBiABKAsyJy5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxl",
+            "U2VhcmNoUmVxdWVzdEgAEkgKEXByb2ZpbGVTZWFyY2hQYXJ0GAcgASgLMisu",
+            "aW9wLnByb2ZpbGVzZXJ2ZXIuUHJvZmlsZVNlYXJjaFBhcnRSZXF1ZXN0SAAS",
+            "YAodYXBwbGljYXRpb25TZXJ2aWNlU2VuZE1lc3NhZ2UYCCABKAsyNy5pb3Au",
+            "cHJvZmlsZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VTZW5kTWVzc2FnZVJl",
+            "cXVlc3RIABJ+CixhcHBsaWNhdGlvblNlcnZpY2VSZWNlaXZlTWVzc2FnZU5v",
+            "dGlmaWNhdGlvbhgJIAEoCzJGLmlvcC5wcm9maWxlc2VydmVyLkFwcGxpY2F0",
+            "aW9uU2VydmljZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVxdWVzdEgA",
+            "Ej4KDHByb2ZpbGVTdGF0cxgKIAEoCzImLmlvcC5wcm9maWxlc2VydmVyLlBy",
+            "b2ZpbGVTdGF0c1JlcXVlc3RIABJsCiNnZXRJZGVudGl0eVJlbGF0aW9uc2hp",
+            "cHNJbmZvcm1hdGlvbhgLIAEoCzI9LmlvcC5wcm9maWxlc2VydmVyLkdldElk",
+            "ZW50aXR5UmVsYXRpb25zaGlwc0luZm9ybWF0aW9uUmVxdWVzdEgAQg0KC1Jl",
+            "cXVlc3RUeXBlItsGCg5TaW5nbGVSZXNwb25zZRIPCgd2ZXJzaW9uGAEgASgM",
+            "Ei8KBHBpbmcYAiABKAsyHy5pb3AucHJvZmlsZXNlcnZlci5QaW5nUmVzcG9u",
+            "c2VIABI5CglsaXN0Um9sZXMYAyABKAsyJC5pb3AucHJvZmlsZXNlcnZlci5M",
+            "aXN0Um9sZXNSZXNwb25zZUgAEkcKEGxpc3RIb3N0aW5nUGxhbnMYBCABKAsy",
+            "Ky5pb3AucHJvZmlsZXNlcnZlci5MaXN0SG9zdGluZ1BsYW5zUmVzcG9uc2VI",
+            "ABJRChVnZXRQcm9maWxlSW5mb3JtYXRpb24YBSABKAsyMC5pb3AucHJvZmls",
+            "ZXNlcnZlci5HZXRQcm9maWxlSW5mb3JtYXRpb25SZXNwb25zZUgAEkEKDXBy",
+            "b2ZpbGVTZWFyY2gYBiABKAsyKC5pb3AucHJvZmlsZXNlcnZlci5Qcm9maWxl",
+            "U2VhcmNoUmVzcG9uc2VIABJJChFwcm9maWxlU2VhcmNoUGFydBgHIAEoCzIs",
+            "LmlvcC5wcm9maWxlc2VydmVyLlByb2ZpbGVTZWFyY2hQYXJ0UmVzcG9uc2VI",
+            "ABJhCh1hcHBsaWNhdGlvblNlcnZpY2VTZW5kTWVzc2FnZRgIIAEoCzI4Lmlv",
+            "cC5wcm9maWxlc2VydmVyLkFwcGxpY2F0aW9uU2VydmljZVNlbmRNZXNzYWdl",
+            "UmVzcG9uc2VIABJ/CixhcHBsaWNhdGlvblNlcnZpY2VSZWNlaXZlTWVzc2Fn",
+            "ZU5vdGlmaWNhdGlvbhgJIAEoCzJHLmlvcC5wcm9maWxlc2VydmVyLkFwcGxp",
+            "Y2F0aW9uU2VydmljZVJlY2VpdmVNZXNzYWdlTm90aWZpY2F0aW9uUmVzcG9u",
+            "c2VIABI/Cgxwcm9maWxlU3RhdHMYCiABKAsyJy5pb3AucHJvZmlsZXNlcnZl",
+            "ci5Qcm9maWxlU3RhdHNSZXNwb25zZUgAEm0KI2dldElkZW50aXR5UmVsYXRp",
+            "b25zaGlwc0luZm9ybWF0aW9uGAsgASgLMj4uaW9wLnByb2ZpbGVzZXJ2ZXIu",
+            "R2V0SWRlbnRpdHlSZWxhdGlvbnNoaXBzSW5mb3JtYXRpb25SZXNwb25zZUgA",
+            "Qg4KDFJlc3BvbnNlVHlwZSLpCwoTQ29udmVyc2F0aW9uUmVxdWVzdBIRCglz",
+            "aWduYXR1cmUYASABKAwSPAoFc3RhcnQYAiABKAsyKy5pb3AucHJvZmlsZXNl",
+            "cnZlci5TdGFydENvbnZlcnNhdGlvblJlcXVlc3RIABJECg9yZWdpc3Rlckhv",
+            "c3RpbmcYAyABKAsyKS5pb3AucHJvZmlsZXNlcnZlci5SZWdpc3Rlckhvc3Rp",
+            "bmdSZXF1ZXN0SAASNAoHY2hlY2tJbhgEIAEoCzIhLmlvcC5wcm9maWxlc2Vy",
+            "dmVyLkNoZWNrSW5SZXF1ZXN0SAASQgoOdmVyaWZ5SWRlbnRpdHkYBSABKAsy",
+            "KC5pb3AucHJvZmlsZXNlcnZlci5WZXJpZnlJZGVudGl0eVJlcXVlc3RIABJA",
+            "Cg11cGRhdGVQcm9maWxlGAYgASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuVXBk",
+            "YXRlUHJvZmlsZVJlcXVlc3RIABJSChZjYW5jZWxIb3N0aW5nQWdyZWVtZW50",
+            "GAcgASgLMjAuaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuY2VsSG9zdGluZ0FncmVl",
+            "bWVudFJlcXVlc3RIABJQChVhcHBsaWNhdGlvblNlcnZpY2VBZGQYCCABKAsy",
+            "Ly5pb3AucHJvZmlsZXNlcnZlci5BcHBsaWNhdGlvblNlcnZpY2VBZGRSZXF1",
+            "ZXN0SAASVgoYYXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlGAkgASgLMjIuaW9w",
+            "LnByb2ZpbGVzZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlUmVxdWVz",
+            "dEgAEmIKHmNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2VydmljZRgKIAEoCzI4",
+            "LmlvcC5wcm9maWxlc2VydmVyLkNhbGxJZGVudGl0eUFwcGxpY2F0aW9uU2Vy",
+            "dmljZVJlcXVlc3RIABJWChhpbmNvbWluZ0NhbGxOb3RpZmljYXRpb24YCyAB",
+            "KAsyMi5pb3AucHJvZmlsZXNlcnZlci5JbmNvbWluZ0NhbGxOb3RpZmljYXRp",
+            "b25SZXF1ZXN0SAASSgoSYWRkUmVsYXRlZElkZW50aXR5GAwgASgLMiwuaW9w",
+            "LnByb2ZpbGVzZXJ2ZXIuQWRkUmVsYXRlZElkZW50aXR5UmVxdWVzdEgAElAK",
+            "FXJlbW92ZVJlbGF0ZWRJZGVudGl0eRgNIAEoCzIvLmlvcC5wcm9maWxlc2Vy",
+            "dmVyLlJlbW92ZVJlbGF0ZWRJZGVudGl0eVJlcXVlc3RIABJkCh9zdGFydE5l",
+            "aWdoYm9yaG9vZEluaXRpYWxpemF0aW9uGA4gASgLMjkuaW9wLnByb2ZpbGVz",
+            "ZXJ2ZXIuU3RhcnROZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvblJlcXVlc3RI",
+            "ABJmCiBmaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvbhgPIAEoCzI6",
+            "LmlvcC5wcm9maWxlc2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxp",
+            "emF0aW9uUmVxdWVzdEgAEmQKH25laWdoYm9yaG9vZFNoYXJlZFByb2ZpbGVV",
+            "cGRhdGUYECABKAsyOS5pb3AucHJvZmlsZXNlcnZlci5OZWlnaGJvcmhvb2RT",
+            "aGFyZWRQcm9maWxlVXBkYXRlUmVxdWVzdEgAElQKF3N0b3BOZWlnaGJvcmhv",
+            "b2RVcGRhdGVzGBEgASgLMjEuaW9wLnByb2ZpbGVzZXJ2ZXIuU3RvcE5laWdo",
+            "Ym9yaG9vZFVwZGF0ZXNSZXF1ZXN0SAASPgoMY2FuU3RvcmVEYXRhGBIgASgL",
+            "MiYuaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuU3RvcmVEYXRhUmVxdWVzdEgAEk4K",
+            "FGNhblB1Ymxpc2hJcG5zUmVjb3JkGBMgASgLMi4uaW9wLnByb2ZpbGVzZXJ2",
+            "ZXIuQ2FuUHVibGlzaElwbnNSZWNvcmRSZXF1ZXN0SABCDQoLUmVxdWVzdFR5",
+            "cGUi/QsKFENvbnZlcnNhdGlvblJlc3BvbnNlEhEKCXNpZ25hdHVyZRgBIAEo",
+            "DBI9CgVzdGFydBgCIAEoCzIsLmlvcC5wcm9maWxlc2VydmVyLlN0YXJ0Q29u",
+            "dmVyc2F0aW9uUmVzcG9uc2VIABJFCg9yZWdpc3Rlckhvc3RpbmcYAyABKAsy",
+            "Ki5pb3AucHJvZmlsZXNlcnZlci5SZWdpc3Rlckhvc3RpbmdSZXNwb25zZUgA",
+            "EjUKB2NoZWNrSW4YBCABKAsyIi5pb3AucHJvZmlsZXNlcnZlci5DaGVja0lu",
+            "UmVzcG9uc2VIABJDCg52ZXJpZnlJZGVudGl0eRgFIAEoCzIpLmlvcC5wcm9m",
+            "aWxlc2VydmVyLlZlcmlmeUlkZW50aXR5UmVzcG9uc2VIABJBCg11cGRhdGVQ",
+            "cm9maWxlGAYgASgLMiguaW9wLnByb2ZpbGVzZXJ2ZXIuVXBkYXRlUHJvZmls",
+            "ZVJlc3BvbnNlSAASUwoWY2FuY2VsSG9zdGluZ0FncmVlbWVudBgHIAEoCzIx",
+            "LmlvcC5wcm9maWxlc2VydmVyLkNhbmNlbEhvc3RpbmdBZ3JlZW1lbnRSZXNw",
+            "b25zZUgAElEKFWFwcGxpY2F0aW9uU2VydmljZUFkZBgIIAEoCzIwLmlvcC5w",
+            "cm9maWxlc2VydmVyLkFwcGxpY2F0aW9uU2VydmljZUFkZFJlc3BvbnNlSAAS",
+            "VwoYYXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlGAkgASgLMjMuaW9wLnByb2Zp",
+            "bGVzZXJ2ZXIuQXBwbGljYXRpb25TZXJ2aWNlUmVtb3ZlUmVzcG9uc2VIABJj",
+            "Ch5jYWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZpY2UYCiABKAsyOS5pb3Au",
+            "cHJvZmlsZXNlcnZlci5DYWxsSWRlbnRpdHlBcHBsaWNhdGlvblNlcnZpY2VS",
+            "ZXNwb25zZUgAElcKGGluY29taW5nQ2FsbE5vdGlmaWNhdGlvbhgLIAEoCzIz",
+            "LmlvcC5wcm9maWxlc2VydmVyLkluY29taW5nQ2FsbE5vdGlmaWNhdGlvblJl",
+            "c3BvbnNlSAASSwoSYWRkUmVsYXRlZElkZW50aXR5GAwgASgLMi0uaW9wLnBy",
             "b2ZpbGVzZXJ2ZXIuQWRkUmVsYXRlZElkZW50aXR5UmVzcG9uc2VIABJRChVy",
-            "ZW1vdmVSZWxhdGVkSWRlbnRpdHkYDyABKAsyMC5pb3AucHJvZmlsZXNlcnZl",
+            "ZW1vdmVSZWxhdGVkSWRlbnRpdHkYDSABKAsyMC5pb3AucHJvZmlsZXNlcnZl",
             "ci5SZW1vdmVSZWxhdGVkSWRlbnRpdHlSZXNwb25zZUgAEmUKH3N0YXJ0TmVp",
-            "Z2hib3Job29kSW5pdGlhbGl6YXRpb24YECABKAsyOi5pb3AucHJvZmlsZXNl",
+            "Z2hib3Job29kSW5pdGlhbGl6YXRpb24YDiABKAsyOi5pb3AucHJvZmlsZXNl",
             "cnZlci5TdGFydE5laWdoYm9yaG9vZEluaXRpYWxpemF0aW9uUmVzcG9uc2VI",
-            "ABJnCiBmaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvbhgRIAEoCzI7",
+            "ABJnCiBmaW5pc2hOZWlnaGJvcmhvb2RJbml0aWFsaXphdGlvbhgPIAEoCzI7",
             "LmlvcC5wcm9maWxlc2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxp",
             "emF0aW9uUmVzcG9uc2VIABJlCh9uZWlnaGJvcmhvb2RTaGFyZWRQcm9maWxl",
-            "VXBkYXRlGBIgASgLMjouaW9wLnByb2ZpbGVzZXJ2ZXIuTmVpZ2hib3Job29k",
+            "VXBkYXRlGBAgASgLMjouaW9wLnByb2ZpbGVzZXJ2ZXIuTmVpZ2hib3Job29k",
             "U2hhcmVkUHJvZmlsZVVwZGF0ZVJlc3BvbnNlSAASVQoXc3RvcE5laWdoYm9y",
-            "aG9vZFVwZGF0ZXMYEyABKAsyMi5pb3AucHJvZmlsZXNlcnZlci5TdG9wTmVp",
-            "Z2hib3Job29kVXBkYXRlc1Jlc3BvbnNlSAASPwoMY2FuU3RvcmVEYXRhGBQg",
+            "aG9vZFVwZGF0ZXMYESABKAsyMi5pb3AucHJvZmlsZXNlcnZlci5TdG9wTmVp",
+            "Z2hib3Job29kVXBkYXRlc1Jlc3BvbnNlSAASPwoMY2FuU3RvcmVEYXRhGBIg",
             "ASgLMicuaW9wLnByb2ZpbGVzZXJ2ZXIuQ2FuU3RvcmVEYXRhUmVzcG9uc2VI",
-            "ABJPChRjYW5QdWJsaXNoSXBuc1JlY29yZBgVIAEoCzIvLmlvcC5wcm9maWxl",
+            "ABJPChRjYW5QdWJsaXNoSXBuc1JlY29yZBgTIAEoCzIvLmlvcC5wcm9maWxl",
             "c2VydmVyLkNhblB1Ymxpc2hJcG5zUmVjb3JkUmVzcG9uc2VIAEIOCgxSZXNw",
             "b25zZVR5cGUiHgoLUGluZ1JlcXVlc3QSDwoHcGF5bG9hZBgBIAEoDCIuCgxQ",
             "aW5nUmVzcG9uc2USDwoHcGF5bG9hZBgBIAEoDBINCgVjbG9jaxgCIAEoEiIS",
@@ -302,10 +302,10 @@ namespace Iop.Profileserver {
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Message), global::Iop.Profileserver.Message.Parser, new[]{ "Id", "Request", "Response" }, new[]{ "MessageType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Request), global::Iop.Profileserver.Request.Parser, new[]{ "SingleRequest", "ConversationRequest" }, new[]{ "ConversationType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.Response), global::Iop.Profileserver.Response.Parser, new[]{ "Status", "Timestamp", "Details", "SingleResponse", "ConversationResponse" }, new[]{ "ConversationType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleRequest), global::Iop.Profileserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleResponse), global::Iop.Profileserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "ResponseType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationRequest), global::Iop.Profileserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "ProfileSearch", "ProfileSearchPart", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "RequestType" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationResponse), global::Iop.Profileserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "ProfileSearch", "ProfileSearchPart", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleRequest), global::Iop.Profileserver.SingleRequest.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ProfileSearch", "ProfileSearchPart", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.SingleResponse), global::Iop.Profileserver.SingleResponse.Parser, new[]{ "Version", "Ping", "ListRoles", "ListHostingPlans", "GetProfileInformation", "ProfileSearch", "ProfileSearchPart", "ApplicationServiceSendMessage", "ApplicationServiceReceiveMessageNotification", "ProfileStats", "GetIdentityRelationshipsInformation" }, new[]{ "ResponseType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationRequest), global::Iop.Profileserver.ConversationRequest.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "RequestType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ConversationResponse), global::Iop.Profileserver.ConversationResponse.Parser, new[]{ "Signature", "Start", "RegisterHosting", "CheckIn", "VerifyIdentity", "UpdateProfile", "CancelHostingAgreement", "ApplicationServiceAdd", "ApplicationServiceRemove", "CallIdentityApplicationService", "IncomingCallNotification", "AddRelatedIdentity", "RemoveRelatedIdentity", "StartNeighborhoodInitialization", "FinishNeighborhoodInitialization", "NeighborhoodSharedProfileUpdate", "StopNeighborhoodUpdates", "CanStoreData", "CanPublishIpnsRecord" }, new[]{ "ResponseType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.PingRequest), global::Iop.Profileserver.PingRequest.Parser, new[]{ "Payload" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.PingResponse), global::Iop.Profileserver.PingResponse.Parser, new[]{ "Payload", "Clock" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Iop.Profileserver.ListRolesRequest), global::Iop.Profileserver.ListRolesRequest.Parser, null, null, null, null),
@@ -1340,6 +1340,12 @@ namespace Iop.Profileserver {
         case RequestTypeOneofCase.GetProfileInformation:
           GetProfileInformation = other.GetProfileInformation.Clone();
           break;
+        case RequestTypeOneofCase.ProfileSearch:
+          ProfileSearch = other.ProfileSearch.Clone();
+          break;
+        case RequestTypeOneofCase.ProfileSearchPart:
+          ProfileSearchPart = other.ProfileSearchPart.Clone();
+          break;
         case RequestTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage.Clone();
           break;
@@ -1419,8 +1425,30 @@ namespace Iop.Profileserver {
       }
     }
 
+    /// <summary>Field number for the "profileSearch" field.</summary>
+    public const int ProfileSearchFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileSearchRequest ProfileSearch {
+      get { return requestTypeCase_ == RequestTypeOneofCase.ProfileSearch ? (global::Iop.Profileserver.ProfileSearchRequest) requestType_ : null; }
+      set {
+        requestType_ = value;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ProfileSearch;
+      }
+    }
+
+    /// <summary>Field number for the "profileSearchPart" field.</summary>
+    public const int ProfileSearchPartFieldNumber = 7;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileSearchPartRequest ProfileSearchPart {
+      get { return requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart ? (global::Iop.Profileserver.ProfileSearchPartRequest) requestType_ : null; }
+      set {
+        requestType_ = value;
+        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ProfileSearchPart;
+      }
+    }
+
     /// <summary>Field number for the "applicationServiceSendMessage" field.</summary>
-    public const int ApplicationServiceSendMessageFieldNumber = 6;
+    public const int ApplicationServiceSendMessageFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ApplicationServiceSendMessageRequest ApplicationServiceSendMessage {
       get { return requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage ? (global::Iop.Profileserver.ApplicationServiceSendMessageRequest) requestType_ : null; }
@@ -1431,7 +1459,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "applicationServiceReceiveMessageNotification" field.</summary>
-    public const int ApplicationServiceReceiveMessageNotificationFieldNumber = 7;
+    public const int ApplicationServiceReceiveMessageNotificationFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationRequest ApplicationServiceReceiveMessageNotification {
       get { return requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification ? (global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationRequest) requestType_ : null; }
@@ -1442,7 +1470,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "profileStats" field.</summary>
-    public const int ProfileStatsFieldNumber = 8;
+    public const int ProfileStatsFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ProfileStatsRequest ProfileStats {
       get { return requestTypeCase_ == RequestTypeOneofCase.ProfileStats ? (global::Iop.Profileserver.ProfileStatsRequest) requestType_ : null; }
@@ -1453,7 +1481,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "getIdentityRelationshipsInformation" field.</summary>
-    public const int GetIdentityRelationshipsInformationFieldNumber = 9;
+    public const int GetIdentityRelationshipsInformationFieldNumber = 11;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.GetIdentityRelationshipsInformationRequest GetIdentityRelationshipsInformation {
       get { return requestTypeCase_ == RequestTypeOneofCase.GetIdentityRelationshipsInformation ? (global::Iop.Profileserver.GetIdentityRelationshipsInformationRequest) requestType_ : null; }
@@ -1471,10 +1499,12 @@ namespace Iop.Profileserver {
       ListRoles = 3,
       ListHostingPlans = 4,
       GetProfileInformation = 5,
-      ApplicationServiceSendMessage = 6,
-      ApplicationServiceReceiveMessageNotification = 7,
-      ProfileStats = 8,
-      GetIdentityRelationshipsInformation = 9,
+      ProfileSearch = 6,
+      ProfileSearchPart = 7,
+      ApplicationServiceSendMessage = 8,
+      ApplicationServiceReceiveMessageNotification = 9,
+      ProfileStats = 10,
+      GetIdentityRelationshipsInformation = 11,
     }
     private RequestTypeOneofCase requestTypeCase_ = RequestTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1506,6 +1536,8 @@ namespace Iop.Profileserver {
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(ListHostingPlans, other.ListHostingPlans)) return false;
       if (!object.Equals(GetProfileInformation, other.GetProfileInformation)) return false;
+      if (!object.Equals(ProfileSearch, other.ProfileSearch)) return false;
+      if (!object.Equals(ProfileSearchPart, other.ProfileSearchPart)) return false;
       if (!object.Equals(ApplicationServiceSendMessage, other.ApplicationServiceSendMessage)) return false;
       if (!object.Equals(ApplicationServiceReceiveMessageNotification, other.ApplicationServiceReceiveMessageNotification)) return false;
       if (!object.Equals(ProfileStats, other.ProfileStats)) return false;
@@ -1522,6 +1554,8 @@ namespace Iop.Profileserver {
       if (requestTypeCase_ == RequestTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ListHostingPlans) hash ^= ListHostingPlans.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation) hash ^= GetProfileInformation.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) hash ^= ProfileSearch.GetHashCode();
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) hash ^= ProfileSearchPart.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) hash ^= ApplicationServiceSendMessage.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification) hash ^= ApplicationServiceReceiveMessageNotification.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.ProfileStats) hash ^= ProfileStats.GetHashCode();
@@ -1557,20 +1591,28 @@ namespace Iop.Profileserver {
         output.WriteRawTag(42);
         output.WriteMessage(GetProfileInformation);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
         output.WriteRawTag(50);
+        output.WriteMessage(ProfileSearch);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ProfileSearchPart);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
+        output.WriteRawTag(66);
         output.WriteMessage(ApplicationServiceSendMessage);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(74);
         output.WriteMessage(ApplicationServiceReceiveMessageNotification);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.ProfileStats) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(82);
         output.WriteMessage(ProfileStats);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.GetIdentityRelationshipsInformation) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(90);
         output.WriteMessage(GetIdentityRelationshipsInformation);
       }
     }
@@ -1592,6 +1634,12 @@ namespace Iop.Profileserver {
       }
       if (requestTypeCase_ == RequestTypeOneofCase.GetProfileInformation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetProfileInformation);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearch);
+      }
+      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearchPart);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ApplicationServiceSendMessage);
@@ -1628,6 +1676,12 @@ namespace Iop.Profileserver {
           break;
         case RequestTypeOneofCase.GetProfileInformation:
           GetProfileInformation = other.GetProfileInformation;
+          break;
+        case RequestTypeOneofCase.ProfileSearch:
+          ProfileSearch = other.ProfileSearch;
+          break;
+        case RequestTypeOneofCase.ProfileSearchPart:
+          ProfileSearchPart = other.ProfileSearchPart;
           break;
         case RequestTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage;
@@ -1694,6 +1748,24 @@ namespace Iop.Profileserver {
             break;
           }
           case 50: {
+            global::Iop.Profileserver.ProfileSearchRequest subBuilder = new global::Iop.Profileserver.ProfileSearchRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
+              subBuilder.MergeFrom(ProfileSearch);
+            }
+            input.ReadMessage(subBuilder);
+            ProfileSearch = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Iop.Profileserver.ProfileSearchPartRequest subBuilder = new global::Iop.Profileserver.ProfileSearchPartRequest();
+            if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
+              subBuilder.MergeFrom(ProfileSearchPart);
+            }
+            input.ReadMessage(subBuilder);
+            ProfileSearchPart = subBuilder;
+            break;
+          }
+          case 66: {
             global::Iop.Profileserver.ApplicationServiceSendMessageRequest subBuilder = new global::Iop.Profileserver.ApplicationServiceSendMessageRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceSendMessage) {
               subBuilder.MergeFrom(ApplicationServiceSendMessage);
@@ -1702,7 +1774,7 @@ namespace Iop.Profileserver {
             ApplicationServiceSendMessage = subBuilder;
             break;
           }
-          case 58: {
+          case 74: {
             global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationRequest subBuilder = new global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceReceiveMessageNotification) {
               subBuilder.MergeFrom(ApplicationServiceReceiveMessageNotification);
@@ -1711,7 +1783,7 @@ namespace Iop.Profileserver {
             ApplicationServiceReceiveMessageNotification = subBuilder;
             break;
           }
-          case 66: {
+          case 82: {
             global::Iop.Profileserver.ProfileStatsRequest subBuilder = new global::Iop.Profileserver.ProfileStatsRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.ProfileStats) {
               subBuilder.MergeFrom(ProfileStats);
@@ -1720,7 +1792,7 @@ namespace Iop.Profileserver {
             ProfileStats = subBuilder;
             break;
           }
-          case 74: {
+          case 90: {
             global::Iop.Profileserver.GetIdentityRelationshipsInformationRequest subBuilder = new global::Iop.Profileserver.GetIdentityRelationshipsInformationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.GetIdentityRelationshipsInformation) {
               subBuilder.MergeFrom(GetIdentityRelationshipsInformation);
@@ -1775,6 +1847,12 @@ namespace Iop.Profileserver {
           break;
         case ResponseTypeOneofCase.GetProfileInformation:
           GetProfileInformation = other.GetProfileInformation.Clone();
+          break;
+        case ResponseTypeOneofCase.ProfileSearch:
+          ProfileSearch = other.ProfileSearch.Clone();
+          break;
+        case ResponseTypeOneofCase.ProfileSearchPart:
+          ProfileSearchPart = other.ProfileSearchPart.Clone();
           break;
         case ResponseTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage.Clone();
@@ -1855,8 +1933,30 @@ namespace Iop.Profileserver {
       }
     }
 
+    /// <summary>Field number for the "profileSearch" field.</summary>
+    public const int ProfileSearchFieldNumber = 6;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileSearchResponse ProfileSearch {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch ? (global::Iop.Profileserver.ProfileSearchResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ProfileSearch;
+      }
+    }
+
+    /// <summary>Field number for the "profileSearchPart" field.</summary>
+    public const int ProfileSearchPartFieldNumber = 7;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Iop.Profileserver.ProfileSearchPartResponse ProfileSearchPart {
+      get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart ? (global::Iop.Profileserver.ProfileSearchPartResponse) responseType_ : null; }
+      set {
+        responseType_ = value;
+        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ProfileSearchPart;
+      }
+    }
+
     /// <summary>Field number for the "applicationServiceSendMessage" field.</summary>
-    public const int ApplicationServiceSendMessageFieldNumber = 6;
+    public const int ApplicationServiceSendMessageFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ApplicationServiceSendMessageResponse ApplicationServiceSendMessage {
       get { return responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage ? (global::Iop.Profileserver.ApplicationServiceSendMessageResponse) responseType_ : null; }
@@ -1867,7 +1967,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "applicationServiceReceiveMessageNotification" field.</summary>
-    public const int ApplicationServiceReceiveMessageNotificationFieldNumber = 7;
+    public const int ApplicationServiceReceiveMessageNotificationFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationResponse ApplicationServiceReceiveMessageNotification {
       get { return responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification ? (global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationResponse) responseType_ : null; }
@@ -1878,7 +1978,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "profileStats" field.</summary>
-    public const int ProfileStatsFieldNumber = 8;
+    public const int ProfileStatsFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.ProfileStatsResponse ProfileStats {
       get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileStats ? (global::Iop.Profileserver.ProfileStatsResponse) responseType_ : null; }
@@ -1889,7 +1989,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "getIdentityRelationshipsInformation" field.</summary>
-    public const int GetIdentityRelationshipsInformationFieldNumber = 9;
+    public const int GetIdentityRelationshipsInformationFieldNumber = 11;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.GetIdentityRelationshipsInformationResponse GetIdentityRelationshipsInformation {
       get { return responseTypeCase_ == ResponseTypeOneofCase.GetIdentityRelationshipsInformation ? (global::Iop.Profileserver.GetIdentityRelationshipsInformationResponse) responseType_ : null; }
@@ -1907,10 +2007,12 @@ namespace Iop.Profileserver {
       ListRoles = 3,
       ListHostingPlans = 4,
       GetProfileInformation = 5,
-      ApplicationServiceSendMessage = 6,
-      ApplicationServiceReceiveMessageNotification = 7,
-      ProfileStats = 8,
-      GetIdentityRelationshipsInformation = 9,
+      ProfileSearch = 6,
+      ProfileSearchPart = 7,
+      ApplicationServiceSendMessage = 8,
+      ApplicationServiceReceiveMessageNotification = 9,
+      ProfileStats = 10,
+      GetIdentityRelationshipsInformation = 11,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1942,6 +2044,8 @@ namespace Iop.Profileserver {
       if (!object.Equals(ListRoles, other.ListRoles)) return false;
       if (!object.Equals(ListHostingPlans, other.ListHostingPlans)) return false;
       if (!object.Equals(GetProfileInformation, other.GetProfileInformation)) return false;
+      if (!object.Equals(ProfileSearch, other.ProfileSearch)) return false;
+      if (!object.Equals(ProfileSearchPart, other.ProfileSearchPart)) return false;
       if (!object.Equals(ApplicationServiceSendMessage, other.ApplicationServiceSendMessage)) return false;
       if (!object.Equals(ApplicationServiceReceiveMessageNotification, other.ApplicationServiceReceiveMessageNotification)) return false;
       if (!object.Equals(ProfileStats, other.ProfileStats)) return false;
@@ -1958,6 +2062,8 @@ namespace Iop.Profileserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.ListRoles) hash ^= ListRoles.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ListHostingPlans) hash ^= ListHostingPlans.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation) hash ^= GetProfileInformation.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) hash ^= ProfileSearch.GetHashCode();
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) hash ^= ProfileSearchPart.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) hash ^= ApplicationServiceSendMessage.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification) hash ^= ApplicationServiceReceiveMessageNotification.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.ProfileStats) hash ^= ProfileStats.GetHashCode();
@@ -1993,20 +2099,28 @@ namespace Iop.Profileserver {
         output.WriteRawTag(42);
         output.WriteMessage(GetProfileInformation);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
         output.WriteRawTag(50);
+        output.WriteMessage(ProfileSearch);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ProfileSearchPart);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
+        output.WriteRawTag(66);
         output.WriteMessage(ApplicationServiceSendMessage);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(74);
         output.WriteMessage(ApplicationServiceReceiveMessageNotification);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.ProfileStats) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(82);
         output.WriteMessage(ProfileStats);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.GetIdentityRelationshipsInformation) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(90);
         output.WriteMessage(GetIdentityRelationshipsInformation);
       }
     }
@@ -2028,6 +2142,12 @@ namespace Iop.Profileserver {
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.GetProfileInformation) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GetProfileInformation);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearch);
+      }
+      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearchPart);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ApplicationServiceSendMessage);
@@ -2064,6 +2184,12 @@ namespace Iop.Profileserver {
           break;
         case ResponseTypeOneofCase.GetProfileInformation:
           GetProfileInformation = other.GetProfileInformation;
+          break;
+        case ResponseTypeOneofCase.ProfileSearch:
+          ProfileSearch = other.ProfileSearch;
+          break;
+        case ResponseTypeOneofCase.ProfileSearchPart:
+          ProfileSearchPart = other.ProfileSearchPart;
           break;
         case ResponseTypeOneofCase.ApplicationServiceSendMessage:
           ApplicationServiceSendMessage = other.ApplicationServiceSendMessage;
@@ -2130,6 +2256,24 @@ namespace Iop.Profileserver {
             break;
           }
           case 50: {
+            global::Iop.Profileserver.ProfileSearchResponse subBuilder = new global::Iop.Profileserver.ProfileSearchResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
+              subBuilder.MergeFrom(ProfileSearch);
+            }
+            input.ReadMessage(subBuilder);
+            ProfileSearch = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Iop.Profileserver.ProfileSearchPartResponse subBuilder = new global::Iop.Profileserver.ProfileSearchPartResponse();
+            if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
+              subBuilder.MergeFrom(ProfileSearchPart);
+            }
+            input.ReadMessage(subBuilder);
+            ProfileSearchPart = subBuilder;
+            break;
+          }
+          case 66: {
             global::Iop.Profileserver.ApplicationServiceSendMessageResponse subBuilder = new global::Iop.Profileserver.ApplicationServiceSendMessageResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceSendMessage) {
               subBuilder.MergeFrom(ApplicationServiceSendMessage);
@@ -2138,7 +2282,7 @@ namespace Iop.Profileserver {
             ApplicationServiceSendMessage = subBuilder;
             break;
           }
-          case 58: {
+          case 74: {
             global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationResponse subBuilder = new global::Iop.Profileserver.ApplicationServiceReceiveMessageNotificationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceReceiveMessageNotification) {
               subBuilder.MergeFrom(ApplicationServiceReceiveMessageNotification);
@@ -2147,7 +2291,7 @@ namespace Iop.Profileserver {
             ApplicationServiceReceiveMessageNotification = subBuilder;
             break;
           }
-          case 66: {
+          case 82: {
             global::Iop.Profileserver.ProfileStatsResponse subBuilder = new global::Iop.Profileserver.ProfileStatsResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.ProfileStats) {
               subBuilder.MergeFrom(ProfileStats);
@@ -2156,7 +2300,7 @@ namespace Iop.Profileserver {
             ProfileStats = subBuilder;
             break;
           }
-          case 74: {
+          case 90: {
             global::Iop.Profileserver.GetIdentityRelationshipsInformationResponse subBuilder = new global::Iop.Profileserver.GetIdentityRelationshipsInformationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.GetIdentityRelationshipsInformation) {
               subBuilder.MergeFrom(GetIdentityRelationshipsInformation);
@@ -2230,12 +2374,6 @@ namespace Iop.Profileserver {
           break;
         case RequestTypeOneofCase.IncomingCallNotification:
           IncomingCallNotification = other.IncomingCallNotification.Clone();
-          break;
-        case RequestTypeOneofCase.ProfileSearch:
-          ProfileSearch = other.ProfileSearch.Clone();
-          break;
-        case RequestTypeOneofCase.ProfileSearchPart:
-          ProfileSearchPart = other.ProfileSearchPart.Clone();
           break;
         case RequestTypeOneofCase.AddRelatedIdentity:
           AddRelatedIdentity = other.AddRelatedIdentity.Clone();
@@ -2397,30 +2535,8 @@ namespace Iop.Profileserver {
       }
     }
 
-    /// <summary>Field number for the "profileSearch" field.</summary>
-    public const int ProfileSearchFieldNumber = 12;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.ProfileSearchRequest ProfileSearch {
-      get { return requestTypeCase_ == RequestTypeOneofCase.ProfileSearch ? (global::Iop.Profileserver.ProfileSearchRequest) requestType_ : null; }
-      set {
-        requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ProfileSearch;
-      }
-    }
-
-    /// <summary>Field number for the "profileSearchPart" field.</summary>
-    public const int ProfileSearchPartFieldNumber = 13;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.ProfileSearchPartRequest ProfileSearchPart {
-      get { return requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart ? (global::Iop.Profileserver.ProfileSearchPartRequest) requestType_ : null; }
-      set {
-        requestType_ = value;
-        requestTypeCase_ = value == null ? RequestTypeOneofCase.None : RequestTypeOneofCase.ProfileSearchPart;
-      }
-    }
-
     /// <summary>Field number for the "addRelatedIdentity" field.</summary>
-    public const int AddRelatedIdentityFieldNumber = 14;
+    public const int AddRelatedIdentityFieldNumber = 12;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.AddRelatedIdentityRequest AddRelatedIdentity {
       get { return requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity ? (global::Iop.Profileserver.AddRelatedIdentityRequest) requestType_ : null; }
@@ -2431,7 +2547,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "removeRelatedIdentity" field.</summary>
-    public const int RemoveRelatedIdentityFieldNumber = 15;
+    public const int RemoveRelatedIdentityFieldNumber = 13;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.RemoveRelatedIdentityRequest RemoveRelatedIdentity {
       get { return requestTypeCase_ == RequestTypeOneofCase.RemoveRelatedIdentity ? (global::Iop.Profileserver.RemoveRelatedIdentityRequest) requestType_ : null; }
@@ -2442,7 +2558,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
-    public const int StartNeighborhoodInitializationFieldNumber = 16;
+    public const int StartNeighborhoodInitializationFieldNumber = 14;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StartNeighborhoodInitializationRequest StartNeighborhoodInitialization {
       get { return requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization ? (global::Iop.Profileserver.StartNeighborhoodInitializationRequest) requestType_ : null; }
@@ -2453,7 +2569,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "finishNeighborhoodInitialization" field.</summary>
-    public const int FinishNeighborhoodInitializationFieldNumber = 17;
+    public const int FinishNeighborhoodInitializationFieldNumber = 15;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.FinishNeighborhoodInitializationRequest FinishNeighborhoodInitialization {
       get { return requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization ? (global::Iop.Profileserver.FinishNeighborhoodInitializationRequest) requestType_ : null; }
@@ -2464,7 +2580,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "neighborhoodSharedProfileUpdate" field.</summary>
-    public const int NeighborhoodSharedProfileUpdateFieldNumber = 18;
+    public const int NeighborhoodSharedProfileUpdateFieldNumber = 16;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest NeighborhoodSharedProfileUpdate {
       get { return requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedProfileUpdate ? (global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest) requestType_ : null; }
@@ -2475,7 +2591,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "stopNeighborhoodUpdates" field.</summary>
-    public const int StopNeighborhoodUpdatesFieldNumber = 19;
+    public const int StopNeighborhoodUpdatesFieldNumber = 17;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StopNeighborhoodUpdatesRequest StopNeighborhoodUpdates {
       get { return requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates ? (global::Iop.Profileserver.StopNeighborhoodUpdatesRequest) requestType_ : null; }
@@ -2486,7 +2602,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "canStoreData" field.</summary>
-    public const int CanStoreDataFieldNumber = 20;
+    public const int CanStoreDataFieldNumber = 18;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanStoreDataRequest CanStoreData {
       get { return requestTypeCase_ == RequestTypeOneofCase.CanStoreData ? (global::Iop.Profileserver.CanStoreDataRequest) requestType_ : null; }
@@ -2497,7 +2613,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "canPublishIpnsRecord" field.</summary>
-    public const int CanPublishIpnsRecordFieldNumber = 21;
+    public const int CanPublishIpnsRecordFieldNumber = 19;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanPublishIpnsRecordRequest CanPublishIpnsRecord {
       get { return requestTypeCase_ == RequestTypeOneofCase.CanPublishIpnsRecord ? (global::Iop.Profileserver.CanPublishIpnsRecordRequest) requestType_ : null; }
@@ -2521,16 +2637,14 @@ namespace Iop.Profileserver {
       ApplicationServiceRemove = 9,
       CallIdentityApplicationService = 10,
       IncomingCallNotification = 11,
-      ProfileSearch = 12,
-      ProfileSearchPart = 13,
-      AddRelatedIdentity = 14,
-      RemoveRelatedIdentity = 15,
-      StartNeighborhoodInitialization = 16,
-      FinishNeighborhoodInitialization = 17,
-      NeighborhoodSharedProfileUpdate = 18,
-      StopNeighborhoodUpdates = 19,
-      CanStoreData = 20,
-      CanPublishIpnsRecord = 21,
+      AddRelatedIdentity = 12,
+      RemoveRelatedIdentity = 13,
+      StartNeighborhoodInitialization = 14,
+      FinishNeighborhoodInitialization = 15,
+      NeighborhoodSharedProfileUpdate = 16,
+      StopNeighborhoodUpdates = 17,
+      CanStoreData = 18,
+      CanPublishIpnsRecord = 19,
     }
     private RequestTypeOneofCase requestTypeCase_ = RequestTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2568,8 +2682,6 @@ namespace Iop.Profileserver {
       if (!object.Equals(ApplicationServiceRemove, other.ApplicationServiceRemove)) return false;
       if (!object.Equals(CallIdentityApplicationService, other.CallIdentityApplicationService)) return false;
       if (!object.Equals(IncomingCallNotification, other.IncomingCallNotification)) return false;
-      if (!object.Equals(ProfileSearch, other.ProfileSearch)) return false;
-      if (!object.Equals(ProfileSearchPart, other.ProfileSearchPart)) return false;
       if (!object.Equals(AddRelatedIdentity, other.AddRelatedIdentity)) return false;
       if (!object.Equals(RemoveRelatedIdentity, other.RemoveRelatedIdentity)) return false;
       if (!object.Equals(StartNeighborhoodInitialization, other.StartNeighborhoodInitialization)) return false;
@@ -2596,8 +2708,6 @@ namespace Iop.Profileserver {
       if (requestTypeCase_ == RequestTypeOneofCase.ApplicationServiceRemove) hash ^= ApplicationServiceRemove.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.CallIdentityApplicationService) hash ^= CallIdentityApplicationService.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.IncomingCallNotification) hash ^= IncomingCallNotification.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) hash ^= ProfileSearch.GetHashCode();
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) hash ^= ProfileSearchPart.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity) hash ^= AddRelatedIdentity.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.RemoveRelatedIdentity) hash ^= RemoveRelatedIdentity.GetHashCode();
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) hash ^= StartNeighborhoodInitialization.GetHashCode();
@@ -2661,44 +2771,36 @@ namespace Iop.Profileserver {
         output.WriteRawTag(90);
         output.WriteMessage(IncomingCallNotification);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
-        output.WriteRawTag(98);
-        output.WriteMessage(ProfileSearch);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
-        output.WriteRawTag(106);
-        output.WriteMessage(ProfileSearchPart);
-      }
       if (requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity) {
-        output.WriteRawTag(114);
+        output.WriteRawTag(98);
         output.WriteMessage(AddRelatedIdentity);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.RemoveRelatedIdentity) {
-        output.WriteRawTag(122);
+        output.WriteRawTag(106);
         output.WriteMessage(RemoveRelatedIdentity);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
-        output.WriteRawTag(130, 1);
+        output.WriteRawTag(114);
         output.WriteMessage(StartNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
-        output.WriteRawTag(138, 1);
+        output.WriteRawTag(122);
         output.WriteMessage(FinishNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedProfileUpdate) {
-        output.WriteRawTag(146, 1);
+        output.WriteRawTag(130, 1);
         output.WriteMessage(NeighborhoodSharedProfileUpdate);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates) {
-        output.WriteRawTag(154, 1);
+        output.WriteRawTag(138, 1);
         output.WriteMessage(StopNeighborhoodUpdates);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.CanStoreData) {
-        output.WriteRawTag(162, 1);
+        output.WriteRawTag(146, 1);
         output.WriteMessage(CanStoreData);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.CanPublishIpnsRecord) {
-        output.WriteRawTag(170, 1);
+        output.WriteRawTag(154, 1);
         output.WriteMessage(CanPublishIpnsRecord);
       }
     }
@@ -2739,12 +2841,6 @@ namespace Iop.Profileserver {
       if (requestTypeCase_ == RequestTypeOneofCase.IncomingCallNotification) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IncomingCallNotification);
       }
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearch);
-      }
-      if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearchPart);
-      }
       if (requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AddRelatedIdentity);
       }
@@ -2752,10 +2848,10 @@ namespace Iop.Profileserver {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RemoveRelatedIdentity);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(FinishNeighborhoodInitialization);
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FinishNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedProfileUpdate) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(NeighborhoodSharedProfileUpdate);
@@ -2810,12 +2906,6 @@ namespace Iop.Profileserver {
           break;
         case RequestTypeOneofCase.IncomingCallNotification:
           IncomingCallNotification = other.IncomingCallNotification;
-          break;
-        case RequestTypeOneofCase.ProfileSearch:
-          ProfileSearch = other.ProfileSearch;
-          break;
-        case RequestTypeOneofCase.ProfileSearchPart:
-          ProfileSearchPart = other.ProfileSearchPart;
           break;
         case RequestTypeOneofCase.AddRelatedIdentity:
           AddRelatedIdentity = other.AddRelatedIdentity;
@@ -2948,24 +3038,6 @@ namespace Iop.Profileserver {
             break;
           }
           case 98: {
-            global::Iop.Profileserver.ProfileSearchRequest subBuilder = new global::Iop.Profileserver.ProfileSearchRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearch) {
-              subBuilder.MergeFrom(ProfileSearch);
-            }
-            input.ReadMessage(subBuilder);
-            ProfileSearch = subBuilder;
-            break;
-          }
-          case 106: {
-            global::Iop.Profileserver.ProfileSearchPartRequest subBuilder = new global::Iop.Profileserver.ProfileSearchPartRequest();
-            if (requestTypeCase_ == RequestTypeOneofCase.ProfileSearchPart) {
-              subBuilder.MergeFrom(ProfileSearchPart);
-            }
-            input.ReadMessage(subBuilder);
-            ProfileSearchPart = subBuilder;
-            break;
-          }
-          case 114: {
             global::Iop.Profileserver.AddRelatedIdentityRequest subBuilder = new global::Iop.Profileserver.AddRelatedIdentityRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.AddRelatedIdentity) {
               subBuilder.MergeFrom(AddRelatedIdentity);
@@ -2974,7 +3046,7 @@ namespace Iop.Profileserver {
             AddRelatedIdentity = subBuilder;
             break;
           }
-          case 122: {
+          case 106: {
             global::Iop.Profileserver.RemoveRelatedIdentityRequest subBuilder = new global::Iop.Profileserver.RemoveRelatedIdentityRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.RemoveRelatedIdentity) {
               subBuilder.MergeFrom(RemoveRelatedIdentity);
@@ -2983,7 +3055,7 @@ namespace Iop.Profileserver {
             RemoveRelatedIdentity = subBuilder;
             break;
           }
-          case 130: {
+          case 114: {
             global::Iop.Profileserver.StartNeighborhoodInitializationRequest subBuilder = new global::Iop.Profileserver.StartNeighborhoodInitializationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
               subBuilder.MergeFrom(StartNeighborhoodInitialization);
@@ -2992,7 +3064,7 @@ namespace Iop.Profileserver {
             StartNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 138: {
+          case 122: {
             global::Iop.Profileserver.FinishNeighborhoodInitializationRequest subBuilder = new global::Iop.Profileserver.FinishNeighborhoodInitializationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
               subBuilder.MergeFrom(FinishNeighborhoodInitialization);
@@ -3001,7 +3073,7 @@ namespace Iop.Profileserver {
             FinishNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 146: {
+          case 130: {
             global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest subBuilder = new global::Iop.Profileserver.NeighborhoodSharedProfileUpdateRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedProfileUpdate) {
               subBuilder.MergeFrom(NeighborhoodSharedProfileUpdate);
@@ -3010,7 +3082,7 @@ namespace Iop.Profileserver {
             NeighborhoodSharedProfileUpdate = subBuilder;
             break;
           }
-          case 154: {
+          case 138: {
             global::Iop.Profileserver.StopNeighborhoodUpdatesRequest subBuilder = new global::Iop.Profileserver.StopNeighborhoodUpdatesRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates) {
               subBuilder.MergeFrom(StopNeighborhoodUpdates);
@@ -3019,7 +3091,7 @@ namespace Iop.Profileserver {
             StopNeighborhoodUpdates = subBuilder;
             break;
           }
-          case 162: {
+          case 146: {
             global::Iop.Profileserver.CanStoreDataRequest subBuilder = new global::Iop.Profileserver.CanStoreDataRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.CanStoreData) {
               subBuilder.MergeFrom(CanStoreData);
@@ -3028,7 +3100,7 @@ namespace Iop.Profileserver {
             CanStoreData = subBuilder;
             break;
           }
-          case 170: {
+          case 154: {
             global::Iop.Profileserver.CanPublishIpnsRecordRequest subBuilder = new global::Iop.Profileserver.CanPublishIpnsRecordRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.CanPublishIpnsRecord) {
               subBuilder.MergeFrom(CanPublishIpnsRecord);
@@ -3101,12 +3173,6 @@ namespace Iop.Profileserver {
           break;
         case ResponseTypeOneofCase.IncomingCallNotification:
           IncomingCallNotification = other.IncomingCallNotification.Clone();
-          break;
-        case ResponseTypeOneofCase.ProfileSearch:
-          ProfileSearch = other.ProfileSearch.Clone();
-          break;
-        case ResponseTypeOneofCase.ProfileSearchPart:
-          ProfileSearchPart = other.ProfileSearchPart.Clone();
           break;
         case ResponseTypeOneofCase.AddRelatedIdentity:
           AddRelatedIdentity = other.AddRelatedIdentity.Clone();
@@ -3268,30 +3334,8 @@ namespace Iop.Profileserver {
       }
     }
 
-    /// <summary>Field number for the "profileSearch" field.</summary>
-    public const int ProfileSearchFieldNumber = 12;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.ProfileSearchResponse ProfileSearch {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch ? (global::Iop.Profileserver.ProfileSearchResponse) responseType_ : null; }
-      set {
-        responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ProfileSearch;
-      }
-    }
-
-    /// <summary>Field number for the "profileSearchPart" field.</summary>
-    public const int ProfileSearchPartFieldNumber = 13;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Iop.Profileserver.ProfileSearchPartResponse ProfileSearchPart {
-      get { return responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart ? (global::Iop.Profileserver.ProfileSearchPartResponse) responseType_ : null; }
-      set {
-        responseType_ = value;
-        responseTypeCase_ = value == null ? ResponseTypeOneofCase.None : ResponseTypeOneofCase.ProfileSearchPart;
-      }
-    }
-
     /// <summary>Field number for the "addRelatedIdentity" field.</summary>
-    public const int AddRelatedIdentityFieldNumber = 14;
+    public const int AddRelatedIdentityFieldNumber = 12;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.AddRelatedIdentityResponse AddRelatedIdentity {
       get { return responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity ? (global::Iop.Profileserver.AddRelatedIdentityResponse) responseType_ : null; }
@@ -3302,7 +3346,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "removeRelatedIdentity" field.</summary>
-    public const int RemoveRelatedIdentityFieldNumber = 15;
+    public const int RemoveRelatedIdentityFieldNumber = 13;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.RemoveRelatedIdentityResponse RemoveRelatedIdentity {
       get { return responseTypeCase_ == ResponseTypeOneofCase.RemoveRelatedIdentity ? (global::Iop.Profileserver.RemoveRelatedIdentityResponse) responseType_ : null; }
@@ -3313,7 +3357,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
-    public const int StartNeighborhoodInitializationFieldNumber = 16;
+    public const int StartNeighborhoodInitializationFieldNumber = 14;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StartNeighborhoodInitializationResponse StartNeighborhoodInitialization {
       get { return responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization ? (global::Iop.Profileserver.StartNeighborhoodInitializationResponse) responseType_ : null; }
@@ -3324,7 +3368,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "finishNeighborhoodInitialization" field.</summary>
-    public const int FinishNeighborhoodInitializationFieldNumber = 17;
+    public const int FinishNeighborhoodInitializationFieldNumber = 15;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.FinishNeighborhoodInitializationResponse FinishNeighborhoodInitialization {
       get { return responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization ? (global::Iop.Profileserver.FinishNeighborhoodInitializationResponse) responseType_ : null; }
@@ -3335,7 +3379,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "neighborhoodSharedProfileUpdate" field.</summary>
-    public const int NeighborhoodSharedProfileUpdateFieldNumber = 18;
+    public const int NeighborhoodSharedProfileUpdateFieldNumber = 16;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse NeighborhoodSharedProfileUpdate {
       get { return responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedProfileUpdate ? (global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse) responseType_ : null; }
@@ -3346,7 +3390,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "stopNeighborhoodUpdates" field.</summary>
-    public const int StopNeighborhoodUpdatesFieldNumber = 19;
+    public const int StopNeighborhoodUpdatesFieldNumber = 17;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.StopNeighborhoodUpdatesResponse StopNeighborhoodUpdates {
       get { return responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates ? (global::Iop.Profileserver.StopNeighborhoodUpdatesResponse) responseType_ : null; }
@@ -3357,7 +3401,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "canStoreData" field.</summary>
-    public const int CanStoreDataFieldNumber = 20;
+    public const int CanStoreDataFieldNumber = 18;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanStoreDataResponse CanStoreData {
       get { return responseTypeCase_ == ResponseTypeOneofCase.CanStoreData ? (global::Iop.Profileserver.CanStoreDataResponse) responseType_ : null; }
@@ -3368,7 +3412,7 @@ namespace Iop.Profileserver {
     }
 
     /// <summary>Field number for the "canPublishIpnsRecord" field.</summary>
-    public const int CanPublishIpnsRecordFieldNumber = 21;
+    public const int CanPublishIpnsRecordFieldNumber = 19;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Profileserver.CanPublishIpnsRecordResponse CanPublishIpnsRecord {
       get { return responseTypeCase_ == ResponseTypeOneofCase.CanPublishIpnsRecord ? (global::Iop.Profileserver.CanPublishIpnsRecordResponse) responseType_ : null; }
@@ -3392,16 +3436,14 @@ namespace Iop.Profileserver {
       ApplicationServiceRemove = 9,
       CallIdentityApplicationService = 10,
       IncomingCallNotification = 11,
-      ProfileSearch = 12,
-      ProfileSearchPart = 13,
-      AddRelatedIdentity = 14,
-      RemoveRelatedIdentity = 15,
-      StartNeighborhoodInitialization = 16,
-      FinishNeighborhoodInitialization = 17,
-      NeighborhoodSharedProfileUpdate = 18,
-      StopNeighborhoodUpdates = 19,
-      CanStoreData = 20,
-      CanPublishIpnsRecord = 21,
+      AddRelatedIdentity = 12,
+      RemoveRelatedIdentity = 13,
+      StartNeighborhoodInitialization = 14,
+      FinishNeighborhoodInitialization = 15,
+      NeighborhoodSharedProfileUpdate = 16,
+      StopNeighborhoodUpdates = 17,
+      CanStoreData = 18,
+      CanPublishIpnsRecord = 19,
     }
     private ResponseTypeOneofCase responseTypeCase_ = ResponseTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3439,8 +3481,6 @@ namespace Iop.Profileserver {
       if (!object.Equals(ApplicationServiceRemove, other.ApplicationServiceRemove)) return false;
       if (!object.Equals(CallIdentityApplicationService, other.CallIdentityApplicationService)) return false;
       if (!object.Equals(IncomingCallNotification, other.IncomingCallNotification)) return false;
-      if (!object.Equals(ProfileSearch, other.ProfileSearch)) return false;
-      if (!object.Equals(ProfileSearchPart, other.ProfileSearchPart)) return false;
       if (!object.Equals(AddRelatedIdentity, other.AddRelatedIdentity)) return false;
       if (!object.Equals(RemoveRelatedIdentity, other.RemoveRelatedIdentity)) return false;
       if (!object.Equals(StartNeighborhoodInitialization, other.StartNeighborhoodInitialization)) return false;
@@ -3467,8 +3507,6 @@ namespace Iop.Profileserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.ApplicationServiceRemove) hash ^= ApplicationServiceRemove.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.CallIdentityApplicationService) hash ^= CallIdentityApplicationService.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.IncomingCallNotification) hash ^= IncomingCallNotification.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) hash ^= ProfileSearch.GetHashCode();
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) hash ^= ProfileSearchPart.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity) hash ^= AddRelatedIdentity.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.RemoveRelatedIdentity) hash ^= RemoveRelatedIdentity.GetHashCode();
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) hash ^= StartNeighborhoodInitialization.GetHashCode();
@@ -3532,44 +3570,36 @@ namespace Iop.Profileserver {
         output.WriteRawTag(90);
         output.WriteMessage(IncomingCallNotification);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
-        output.WriteRawTag(98);
-        output.WriteMessage(ProfileSearch);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
-        output.WriteRawTag(106);
-        output.WriteMessage(ProfileSearchPart);
-      }
       if (responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity) {
-        output.WriteRawTag(114);
+        output.WriteRawTag(98);
         output.WriteMessage(AddRelatedIdentity);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.RemoveRelatedIdentity) {
-        output.WriteRawTag(122);
+        output.WriteRawTag(106);
         output.WriteMessage(RemoveRelatedIdentity);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
-        output.WriteRawTag(130, 1);
+        output.WriteRawTag(114);
         output.WriteMessage(StartNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
-        output.WriteRawTag(138, 1);
+        output.WriteRawTag(122);
         output.WriteMessage(FinishNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedProfileUpdate) {
-        output.WriteRawTag(146, 1);
+        output.WriteRawTag(130, 1);
         output.WriteMessage(NeighborhoodSharedProfileUpdate);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates) {
-        output.WriteRawTag(154, 1);
+        output.WriteRawTag(138, 1);
         output.WriteMessage(StopNeighborhoodUpdates);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.CanStoreData) {
-        output.WriteRawTag(162, 1);
+        output.WriteRawTag(146, 1);
         output.WriteMessage(CanStoreData);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.CanPublishIpnsRecord) {
-        output.WriteRawTag(170, 1);
+        output.WriteRawTag(154, 1);
         output.WriteMessage(CanPublishIpnsRecord);
       }
     }
@@ -3610,12 +3640,6 @@ namespace Iop.Profileserver {
       if (responseTypeCase_ == ResponseTypeOneofCase.IncomingCallNotification) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IncomingCallNotification);
       }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearch);
-      }
-      if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProfileSearchPart);
-      }
       if (responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AddRelatedIdentity);
       }
@@ -3623,10 +3647,10 @@ namespace Iop.Profileserver {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RemoveRelatedIdentity);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(FinishNeighborhoodInitialization);
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FinishNeighborhoodInitialization);
       }
       if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedProfileUpdate) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(NeighborhoodSharedProfileUpdate);
@@ -3681,12 +3705,6 @@ namespace Iop.Profileserver {
           break;
         case ResponseTypeOneofCase.IncomingCallNotification:
           IncomingCallNotification = other.IncomingCallNotification;
-          break;
-        case ResponseTypeOneofCase.ProfileSearch:
-          ProfileSearch = other.ProfileSearch;
-          break;
-        case ResponseTypeOneofCase.ProfileSearchPart:
-          ProfileSearchPart = other.ProfileSearchPart;
           break;
         case ResponseTypeOneofCase.AddRelatedIdentity:
           AddRelatedIdentity = other.AddRelatedIdentity;
@@ -3819,24 +3837,6 @@ namespace Iop.Profileserver {
             break;
           }
           case 98: {
-            global::Iop.Profileserver.ProfileSearchResponse subBuilder = new global::Iop.Profileserver.ProfileSearchResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearch) {
-              subBuilder.MergeFrom(ProfileSearch);
-            }
-            input.ReadMessage(subBuilder);
-            ProfileSearch = subBuilder;
-            break;
-          }
-          case 106: {
-            global::Iop.Profileserver.ProfileSearchPartResponse subBuilder = new global::Iop.Profileserver.ProfileSearchPartResponse();
-            if (responseTypeCase_ == ResponseTypeOneofCase.ProfileSearchPart) {
-              subBuilder.MergeFrom(ProfileSearchPart);
-            }
-            input.ReadMessage(subBuilder);
-            ProfileSearchPart = subBuilder;
-            break;
-          }
-          case 114: {
             global::Iop.Profileserver.AddRelatedIdentityResponse subBuilder = new global::Iop.Profileserver.AddRelatedIdentityResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.AddRelatedIdentity) {
               subBuilder.MergeFrom(AddRelatedIdentity);
@@ -3845,7 +3845,7 @@ namespace Iop.Profileserver {
             AddRelatedIdentity = subBuilder;
             break;
           }
-          case 122: {
+          case 106: {
             global::Iop.Profileserver.RemoveRelatedIdentityResponse subBuilder = new global::Iop.Profileserver.RemoveRelatedIdentityResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.RemoveRelatedIdentity) {
               subBuilder.MergeFrom(RemoveRelatedIdentity);
@@ -3854,7 +3854,7 @@ namespace Iop.Profileserver {
             RemoveRelatedIdentity = subBuilder;
             break;
           }
-          case 130: {
+          case 114: {
             global::Iop.Profileserver.StartNeighborhoodInitializationResponse subBuilder = new global::Iop.Profileserver.StartNeighborhoodInitializationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.StartNeighborhoodInitialization) {
               subBuilder.MergeFrom(StartNeighborhoodInitialization);
@@ -3863,7 +3863,7 @@ namespace Iop.Profileserver {
             StartNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 138: {
+          case 122: {
             global::Iop.Profileserver.FinishNeighborhoodInitializationResponse subBuilder = new global::Iop.Profileserver.FinishNeighborhoodInitializationResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.FinishNeighborhoodInitialization) {
               subBuilder.MergeFrom(FinishNeighborhoodInitialization);
@@ -3872,7 +3872,7 @@ namespace Iop.Profileserver {
             FinishNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 146: {
+          case 130: {
             global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse subBuilder = new global::Iop.Profileserver.NeighborhoodSharedProfileUpdateResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.NeighborhoodSharedProfileUpdate) {
               subBuilder.MergeFrom(NeighborhoodSharedProfileUpdate);
@@ -3881,7 +3881,7 @@ namespace Iop.Profileserver {
             NeighborhoodSharedProfileUpdate = subBuilder;
             break;
           }
-          case 154: {
+          case 138: {
             global::Iop.Profileserver.StopNeighborhoodUpdatesResponse subBuilder = new global::Iop.Profileserver.StopNeighborhoodUpdatesResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.StopNeighborhoodUpdates) {
               subBuilder.MergeFrom(StopNeighborhoodUpdates);
@@ -3890,7 +3890,7 @@ namespace Iop.Profileserver {
             StopNeighborhoodUpdates = subBuilder;
             break;
           }
-          case 162: {
+          case 146: {
             global::Iop.Profileserver.CanStoreDataResponse subBuilder = new global::Iop.Profileserver.CanStoreDataResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.CanStoreData) {
               subBuilder.MergeFrom(CanStoreData);
@@ -3899,7 +3899,7 @@ namespace Iop.Profileserver {
             CanStoreData = subBuilder;
             break;
           }
-          case 170: {
+          case 154: {
             global::Iop.Profileserver.CanPublishIpnsRecordResponse subBuilder = new global::Iop.Profileserver.CanPublishIpnsRecordResponse();
             if (responseTypeCase_ == ResponseTypeOneofCase.CanPublishIpnsRecord) {
               subBuilder.MergeFrom(CanPublishIpnsRecord);
@@ -10272,7 +10272,7 @@ namespace Iop.Profileserver {
   ///
   ///  Each search request only produces a limited number of results. The maximal size of the first set of results 
   ///  is provided by 'maxResponseRecordCount' field. The response to this message contains up to 'maxResponseRecordCount' 
-  ///  results. If there are more results available, they are saved to the conversation context, which enables the client 
+  ///  results. If there are more results available, they are saved to the server's cache, which enables the client 
   ///  to obtain more results with subsequent ProfileSearchPartRequest messages.
   ///
   ///  The profile server will not save more than 'maxTotalRecordCount' search requests. 
@@ -10282,8 +10282,6 @@ namespace Iop.Profileserver {
   ///  Once the client sends another ProfileSearchRequest, or if it disconnects, the old search results are discarded.
   ///
   ///  Roles: clNonCustomer, clCustomer
-  ///
-  ///  Conversation status: ConversationStarted, Verified, Authenticated
   /// </summary>
   public sealed partial class ProfileSearchRequest : pb::IMessage<ProfileSearchRequest> {
     private static readonly pb::MessageParser<ProfileSearchRequest> _parser = new pb::MessageParser<ProfileSearchRequest>(() => new ProfileSearchRequest());
@@ -11178,8 +11176,6 @@ namespace Iop.Profileserver {
   ///  in the ProfileSearchResponse, and the search results have not expired yet.
   ///
   ///  Roles: clNonCustomer, clCustomer
-  ///
-  ///  Conversation status: ConversationStarted, Verified, Authenticated
   /// </summary>
   public sealed partial class ProfileSearchPartRequest : pb::IMessage<ProfileSearchPartRequest> {
     private static readonly pb::MessageParser<ProfileSearchPartRequest> _parser = new pb::MessageParser<ProfileSearchPartRequest>(() => new ProfileSearchPartRequest());
