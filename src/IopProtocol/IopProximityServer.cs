@@ -64,14 +64,14 @@ namespace Iop.Proximityserver {
             "IAEoCzIqLmlvcC5wcm94aW1pdHlzZXJ2ZXIuVXBkYXRlQWN0aXZpdHlSZXF1",
             "ZXN0SAASRAoOZGVsZXRlQWN0aXZpdHkYBiABKAsyKi5pb3AucHJveGltaXR5",
             "c2VydmVyLkRlbGV0ZUFjdGl2aXR5UmVxdWVzdEgAEmYKH3N0YXJ0TmVpZ2hi",
-            "b3Job29kSW5pdGlhbGl6YXRpb24YCSABKAsyOy5pb3AucHJveGltaXR5c2Vy",
+            "b3Job29kSW5pdGlhbGl6YXRpb24YByABKAsyOy5pb3AucHJveGltaXR5c2Vy",
             "dmVyLlN0YXJ0TmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb25SZXF1ZXN0SAAS",
-            "aAogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YCiABKAsyPC5p",
+            "aAogZmluaXNoTmVpZ2hib3Job29kSW5pdGlhbGl6YXRpb24YCCABKAsyPC5p",
             "b3AucHJveGltaXR5c2VydmVyLkZpbmlzaE5laWdoYm9yaG9vZEluaXRpYWxp",
             "emF0aW9uUmVxdWVzdEgAEmgKIG5laWdoYm9yaG9vZFNoYXJlZEFjdGl2aXR5",
-            "VXBkYXRlGAsgASgLMjwuaW9wLnByb3hpbWl0eXNlcnZlci5OZWlnaGJvcmhv",
+            "VXBkYXRlGAkgASgLMjwuaW9wLnByb3hpbWl0eXNlcnZlci5OZWlnaGJvcmhv",
             "b2RTaGFyZWRBY3Rpdml0eVVwZGF0ZVJlcXVlc3RIABJWChdzdG9wTmVpZ2hi",
-            "b3Job29kVXBkYXRlcxgMIAEoCzIzLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3Rv",
+            "b3Job29kVXBkYXRlcxgKIAEoCzIzLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3Rv",
             "cE5laWdoYm9yaG9vZFVwZGF0ZXNSZXF1ZXN0SABCDQoLUmVxdWVzdFR5cGUi",
             "rgYKFENvbnZlcnNhdGlvblJlc3BvbnNlEhEKCXNpZ25hdHVyZRgBIAEoDBI/",
             "CgVzdGFydBgCIAEoCzIuLmlvcC5wcm94aW1pdHlzZXJ2ZXIuU3RhcnRDb252",
@@ -1924,7 +1924,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "startNeighborhoodInitialization" field.</summary>
-    public const int StartNeighborhoodInitializationFieldNumber = 9;
+    public const int StartNeighborhoodInitializationFieldNumber = 7;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StartNeighborhoodInitializationRequest StartNeighborhoodInitialization {
       get { return requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization ? (global::Iop.Proximityserver.StartNeighborhoodInitializationRequest) requestType_ : null; }
@@ -1935,7 +1935,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "finishNeighborhoodInitialization" field.</summary>
-    public const int FinishNeighborhoodInitializationFieldNumber = 10;
+    public const int FinishNeighborhoodInitializationFieldNumber = 8;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.FinishNeighborhoodInitializationRequest FinishNeighborhoodInitialization {
       get { return requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization ? (global::Iop.Proximityserver.FinishNeighborhoodInitializationRequest) requestType_ : null; }
@@ -1946,7 +1946,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "neighborhoodSharedActivityUpdate" field.</summary>
-    public const int NeighborhoodSharedActivityUpdateFieldNumber = 11;
+    public const int NeighborhoodSharedActivityUpdateFieldNumber = 9;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest NeighborhoodSharedActivityUpdate {
       get { return requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedActivityUpdate ? (global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest) requestType_ : null; }
@@ -1957,7 +1957,7 @@ namespace Iop.Proximityserver {
     }
 
     /// <summary>Field number for the "stopNeighborhoodUpdates" field.</summary>
-    public const int StopNeighborhoodUpdatesFieldNumber = 12;
+    public const int StopNeighborhoodUpdatesFieldNumber = 10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest StopNeighborhoodUpdates {
       get { return requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates ? (global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest) requestType_ : null; }
@@ -1976,10 +1976,10 @@ namespace Iop.Proximityserver {
       CreateActivity = 4,
       UpdateActivity = 5,
       DeleteActivity = 6,
-      StartNeighborhoodInitialization = 9,
-      FinishNeighborhoodInitialization = 10,
-      NeighborhoodSharedActivityUpdate = 11,
-      StopNeighborhoodUpdates = 12,
+      StartNeighborhoodInitialization = 7,
+      FinishNeighborhoodInitialization = 8,
+      NeighborhoodSharedActivityUpdate = 9,
+      StopNeighborhoodUpdates = 10,
     }
     private RequestTypeOneofCase requestTypeCase_ = RequestTypeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2069,19 +2069,19 @@ namespace Iop.Proximityserver {
         output.WriteMessage(DeleteActivity);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(58);
         output.WriteMessage(StartNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
-        output.WriteRawTag(82);
+        output.WriteRawTag(66);
         output.WriteMessage(FinishNeighborhoodInitialization);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedActivityUpdate) {
-        output.WriteRawTag(90);
+        output.WriteRawTag(74);
         output.WriteMessage(NeighborhoodSharedActivityUpdate);
       }
       if (requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates) {
-        output.WriteRawTag(98);
+        output.WriteRawTag(82);
         output.WriteMessage(StopNeighborhoodUpdates);
       }
     }
@@ -2219,7 +2219,7 @@ namespace Iop.Proximityserver {
             DeleteActivity = subBuilder;
             break;
           }
-          case 74: {
+          case 58: {
             global::Iop.Proximityserver.StartNeighborhoodInitializationRequest subBuilder = new global::Iop.Proximityserver.StartNeighborhoodInitializationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.StartNeighborhoodInitialization) {
               subBuilder.MergeFrom(StartNeighborhoodInitialization);
@@ -2228,7 +2228,7 @@ namespace Iop.Proximityserver {
             StartNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 82: {
+          case 66: {
             global::Iop.Proximityserver.FinishNeighborhoodInitializationRequest subBuilder = new global::Iop.Proximityserver.FinishNeighborhoodInitializationRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.FinishNeighborhoodInitialization) {
               subBuilder.MergeFrom(FinishNeighborhoodInitialization);
@@ -2237,7 +2237,7 @@ namespace Iop.Proximityserver {
             FinishNeighborhoodInitialization = subBuilder;
             break;
           }
-          case 90: {
+          case 74: {
             global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest subBuilder = new global::Iop.Proximityserver.NeighborhoodSharedActivityUpdateRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.NeighborhoodSharedActivityUpdate) {
               subBuilder.MergeFrom(NeighborhoodSharedActivityUpdate);
@@ -2246,7 +2246,7 @@ namespace Iop.Proximityserver {
             NeighborhoodSharedActivityUpdate = subBuilder;
             break;
           }
-          case 98: {
+          case 82: {
             global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest subBuilder = new global::Iop.Proximityserver.StopNeighborhoodUpdatesRequest();
             if (requestTypeCase_ == RequestTypeOneofCase.StopNeighborhoodUpdates) {
               subBuilder.MergeFrom(StopNeighborhoodUpdates);
@@ -4501,7 +4501,7 @@ namespace Iop.Proximityserver {
     public const int LongitudeFieldNumber = 7;
     private int longitude_;
     /// <summary>
-    ///  the activity location. On non-primary proximity servers, this is not the latest reported location of the activity, 
+    ///  the activity location. On non-primary proximity servers, this might not be the latest reported location of the activity, 
     ///  but rather the last known location to the server being queried, which will often be the original location of the activity.
     ///  On primary proximity servers, the location information is current.
     /// </summary>
@@ -4531,7 +4531,8 @@ namespace Iop.Proximityserver {
     public const int StartTimeFieldNumber = 9;
     private long startTime_;
     /// <summary>
-    ///  TimestampType. Time when the activity starts. This can be in the past for already running 
+    ///  On non-primary proximity servers, this might not be the latest reported precision information
+    ///  but rather the last known to the server being queried. On primary proximity servers, the precision information is current. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long StartTime {
