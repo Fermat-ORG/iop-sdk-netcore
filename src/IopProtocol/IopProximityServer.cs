@@ -6001,8 +6001,6 @@ namespace Iop.Proximityserver {
   ///  Once the client sends another ActivitySearchRequest, or if it disconnects, the old search results are discarded.
   ///
   ///  Roles: client
-  ///
-  ///  Conversation status: ConversationStarted, Verified
   /// </summary>
   public sealed partial class ActivitySearchRequest : pb::IMessage<ActivitySearchRequest> {
     private static readonly pb::MessageParser<ActivitySearchRequest> _parser = new pb::MessageParser<ActivitySearchRequest>(() => new ActivitySearchRequest());
@@ -6078,7 +6076,7 @@ namespace Iop.Proximityserver {
     public const int MaxTotalRecordCountFieldNumber = 3;
     private uint maxTotalRecordCount_;
     /// <summary>
-    ///  The value must not be greater than 'maxTotalRecordCount'.
+    ///  Maximal number of total results that the activity server will look for and save. It has to be an integer between 1 and 10,000.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxTotalRecordCount {
@@ -6464,7 +6462,7 @@ namespace Iop.Proximityserver {
   ///  Specific Error Responses:
   ///    * ERROR_INVALID_VALUE
   ///      * Response.details == "maxResponseRecordCount" - 'ActivitySearchRequest.maxResponseRecordCount' is not within the required range.
-  ///      * Response.details == "maxTotalRecordCount" - 'ActivitySearchRequest.maxTotalRecordCount' is not within the required range.
+  ///      * Response.details == "maxTotalRecordCount" - 'ActivitySearchRequest.maxTotalRecordCount' is not within the required range or the value is less than 'ActivitySearchRequest.maxResponseRecordCount'.
   ///      * Response.details == "ownerNetworkId" - 'ActivitySearchRequest.ownerNetworkId' is not a valid identity network identifier.
   ///      * Response.details == "type" - 'ActivitySearchRequest.type' is too long.
   ///      * Response.details == "startNotAfter" - 'ActivitySearchRequest.startNotAfter' does not represent a valid timestamp value.
@@ -6878,8 +6876,6 @@ namespace Iop.Proximityserver {
   ///  in the ActivitySearchResponse, and the search results have not expired yet.
   ///
   ///  Roles: client
-  ///
-  ///  Conversation status: ConversationStarted, Verified
   /// </summary>
   public sealed partial class ActivitySearchPartRequest : pb::IMessage<ActivitySearchPartRequest> {
     private static readonly pb::MessageParser<ActivitySearchPartRequest> _parser = new pb::MessageParser<ActivitySearchPartRequest>(() => new ActivitySearchPartRequest());

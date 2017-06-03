@@ -10371,7 +10371,7 @@ namespace Iop.Profileserver {
     private uint maxTotalRecordCount_;
     /// <summary>
     ///  is true, this has to be an integer between 1 and 100. If 'includeThumbnailImages' is false,
-    ///  this has to be an integer between 1 and 1,000. The value must not be greater than 'maxTotalRecordCount'.
+    ///  this has to be an integer between 1 and 1,000. 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public uint MaxTotalRecordCount {
@@ -10708,7 +10708,7 @@ namespace Iop.Profileserver {
   ///  Specific Error Responses:
   ///    * ERROR_INVALID_VALUE
   ///      * Response.details == "maxResponseRecordCount" - 'ProfileSearchRequest.maxResponseRecordCount' is not within the required range.
-  ///      * Response.details == "maxTotalRecordCount" - 'ProfileSearchRequest.maxTotalRecordCount' is not within the required range.
+  ///      * Response.details == "maxTotalRecordCount" - 'ProfileSearchRequest.maxTotalRecordCount' is not within the required range or the value is less than 'ProfileSearchRequest.maxResponseRecordCount'.
   ///      * Response.details == "type" - 'ProfileSearchRequest.type' is too long.
   ///      * Response.details == "name" - 'ProfileSearchRequest.name' is too long.
   ///      * Response.details == "latitude" - 'ProfileSearchRequest.latitude' is not a valid location latitude.

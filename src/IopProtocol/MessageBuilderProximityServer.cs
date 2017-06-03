@@ -76,6 +76,15 @@ namespace IopProtocol
     /// <summary>Maximum number of bytes that extraData field in ActivitySearchRequest can occupy.</summary>
     public const int MaxActivitySearchExtraDataLengthBytes = 256;
 
+    /// <summary>Maximum number of bytes that activity type can occupy.</summary>
+    public const int MaxActivityTypeLengthBytes = 64;
+
+    /// <summary>Maximum number of bytes that profile extra data can occupy.</summary>
+    public const int MaxActivityExtraDataLengthBytes = 2048;
+
+    /// <summary>Maximum value of activity location precision.</summary>
+    public const int MaxLocationPrecision = 1000;
+
 
     /// <summary>Original identifier base.</summary>
     private int idBase;
