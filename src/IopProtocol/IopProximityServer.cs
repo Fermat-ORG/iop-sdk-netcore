@@ -4272,7 +4272,8 @@ namespace Iop.Proximityserver {
   ///      * Response.details == "activity.longitude" - 'CreateActivityRequest.activity.longitude' is not a valid longitude information.
   ///      * Response.details == "activity.precision" - 'CreateActivityRequest.activity.precision' must be an integer between 0 and 1,000.
   ///      * Response.details == "activity.startTime" - 'CreateActivityRequest.activity.startTime' does not contain a valid start time information.
-  ///      * Response.details == "activity.expirationTime" - 'CreateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'.
+  ///      * Response.details == "activity.expirationTime" - 'CreateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'
+  ///                                                        or it is more than 24 hours in the future.
   ///      * Response.details == "activity.extraData" - 'CreateActivityRequest.activity.extraData' does not contain a valid extra data information.
   ///      * Response.details == "ignoreServerIds" - 'CreateActivityRequest.ignoreServerIds' does not contain a valid list of network identifiers.
   /// </summary>
@@ -4487,7 +4488,7 @@ namespace Iop.Proximityserver {
     public const int LatitudeFieldNumber = 6;
     private int latitude_;
     /// <summary>
-    ///  LocationType. GPS location latitude information. Together with 'longitude' and 'precision' this provides information 
+    ///  Once set, the type of activity can not be changed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Latitude {
@@ -5371,12 +5372,13 @@ namespace Iop.Proximityserver {
   ///      * Response.details == "activity.profileServerContact.networkId" - 'UpdateActivityRequest.profileServerContact.networkId' is not a valid network identifier.
   ///      * Response.details == "activity.profileServerContact.ipAddress" - 'UpdateActivityRequest.profileServerContact.ipAddress' is not a valid IP address or it is a local network address.
   ///      * Response.details == "activity.profileServerContact.primaryPort" - 'UpdateActivityRequest.profileServerContact.primaryPort' must be an integer between 1 and 65,535.
-  ///      * Response.details == "activity.type" - 'UpdateActivityRequest.activity.type' is not a valid activity type.
+  ///      * Response.details == "activity.type" - 'UpdateActivityRequest.activity.type' is not a valid activity type, or it does not match the original value.
   ///      * Response.details == "activity.latitude" - 'UpdateActivityRequest.activity.latitude' is not a valid latitude information.
   ///      * Response.details == "activity.longitude" - 'UpdateActivityRequest.activity.longitude' is not a valid longitude information.
   ///      * Response.details == "activity.precision" - 'UpdateActivityRequest.activity.precision' must be an integer between 0 and 1,000.
   ///      * Response.details == "activity.startTime" - 'UpdateActivityRequest.activity.startTime' does not contain a valid start time information.
   ///      * Response.details == "activity.expirationTime" - 'UpdateActivityRequest.activity.expirationTime' does not contain a valid expiration time information or its value is smaller than 'CreateActivityRequest.startTime'.
+  ///                                                        or it is more than 24 hours in the future.
   ///      * Response.details == "activity.extraData" - 'UpdateActivityRequest.activity.extraData' does not contain a valid extra data information.
   ///      * Response.details == "ignoreServerIds" - 'UpdateActivityRequest.ignoreServerIds' does not contain a valid list of network identifiers.
   /// </summary>
@@ -7901,7 +7903,8 @@ namespace Iop.Proximityserver {
   ///        * $field == "add.signedActivity.activity.longitude" - `items[$index].add.signedActivity.activity.longitude` is not a valid longitude value.
   ///        * $field == "add.signedActivity.activity.precision" - `items[$index].add.signedActivity.activity.precision` must be an integer between 0 and 1,000.
   ///        * $field == "add.signedActivity.activity.startTime" - `items[$index].add.signedActivity.activity.startTime` does not contain a valid start time information.
-  ///        * $field == "add.signedActivity.activity.expirationTime" - `items[$index].add.signedActivity.activity.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].add.signedActivity.activity.startTime'.
+  ///        * $field == "add.signedActivity.activity.expirationTime" - `items[$index].add.signedActivity.activity.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].add.signedActivity.activity.startTime',
+  ///                                                                    or it is more than 24 hours in the future.
   ///        * $field == "add.signedActivity.activity.extraData" - `items[$index].add.signedActivity.activity.extraData` is not a valid extra data value.
   ///        * $field == "add.signedActivity.signature" - `items[$index].add.signedActivity.signature` is not a valid signature or 'items[$index].add.signedActivity.activity'.
   ///        * $field == "change.signedActivity.activity.version" - `items[$index].change.signedActivity.activity.version` is not a valid activity version.
@@ -7911,12 +7914,13 @@ namespace Iop.Proximityserver {
   ///        * $field == "change.signedActivity.activity.profileServerContact.networkId" - `items[$index].change.signedActivity.activity.profileServerContact.networkId` is not a valid network identifier.
   ///        * $field == "change.signedActivity.activity.profileServerContact.ipAddress" - `items[$index].change.signedActivity.activity.profileServerContact.ipAddress` is not a valid IP address or it is a local network address.
   ///        * $field == "change.signedActivity.activity.profileServerContact.primaryPort" - `items[$index].change.signedActivity.activity.profileServerContact.primaryPort` must be an integer between 1 and 65,535.
-  ///        * $field == "change.signedActivity.activity.type" - `items[$index].change.signedActivity.activity.type` is not a valid activity type.
+  ///        * $field == "change.signedActivity.activity.type" - `items[$index].change.signedActivity.activity.type` is not a valid activity type, or it does not match the original value.
   ///        * $field == "change.signedActivity.activity.latitude" - `items[$index].change.signedActivity.activity.latitude` is not a valid latitude value.
   ///        * $field == "change.signedActivity.activity.longitude" - `items[$index].change.signedActivity.activity.longitude` is not a valid longitude value.
   ///        * $field == "change.signedActivity.activity.precision" - `items[$index].change.signedActivity.activity.precision` must be an integer between 0 and 1,000.
   ///        * $field == "change.signedActivity.activity.startTime" - `items[$index].change.signedActivity.activity.startTime` does not contain a valid start time information.
   ///        * $field == "change.signedActivity.activity.expirationTime" - `items[$index].change.signedActivity.activity.expirationTime` does not contain a valid expiration time information or its value is smaller than 'items[$index].change.signedActivity.activity.startTime'.
+  ///                                                                      or it is more than 24 hours in the future.
   ///        * $field == "change.signedActivity.activity.extraData" - `items[$index].change.signedActivity.activity.extraData` is not a valid extra data value.
   ///        * $field == "change.signedActivity.signature" - `items[$index].change.signedActivity.signature` is not a valid signature or 'items[$index].change.signedActivity.activity'.
   ///        * $field == "delete.id" - `items[$index].delete.id` does not represent an existing activity, or another update item in the same request referred to this activity.
