@@ -186,12 +186,13 @@ namespace IopServerCore.Network.LOC
 
 
     /// <summary>
-    /// Announces profile server's primary server role interface to the LOC server.
+    /// Announces server's primary server role interface to the LOC server.
     /// </summary>
     /// <param name="PrimaryPort">Primary port of the server.</param>
+    /// <param name="Type">Type of the server.</param>
     /// <param name="Location">Optionally, an empty GpsLocation instance that will be filled with location information received from the LOC server if the function succeeds.</param>
     /// <returns>true if the function succeeds, false otherwise.</returns>
-    public async Task<bool> RegisterPrimaryServerRoleAsync(int PrimaryPort, IopProtocol.GpsLocation Location = null)
+    public async Task<bool> RegisterPrimaryServerRoleAsync(int PrimaryPort, ServiceType Type, IopProtocol.GpsLocation Location = null)
     {
       log.Info("(PrimaryPort:{0})", PrimaryPort);
 
@@ -200,7 +201,7 @@ namespace IopServerCore.Network.LOC
       ServiceInfo serviceInfo = new ServiceInfo()
       {
         Port = (uint)PrimaryPort,
-        Type = ServiceType.Profile,
+        Type = Type,
         ServiceData = ProtocolHelper.ByteArrayToByteString(Crypto.Sha256(((KeysEd25519)config.Settings["Keys"]).PublicKey))
       };
 
