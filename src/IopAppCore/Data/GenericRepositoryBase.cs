@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using IopCommon;
 
-namespace IopServerCore.Data
+namespace IopAppCore.Data
 {
   /// <summary>
   /// Generic repository pattern allows us to easy implement our repositories.
@@ -16,7 +16,7 @@ namespace IopServerCore.Data
   public class GenericRepositoryBase<TDbContext, TEntity> where TDbContext : DbContext, new() where TEntity : class
   {
     /// <summary>Class logger.</summary>
-    private static Logger log = new Logger("IopServerCore.Data.GenericRepositoryBase");
+    private static Logger log = new Logger("IopAppCore.Data.GenericRepositoryBase");
 
     /// <summary>Database context.</summary>
     protected TDbContext context;

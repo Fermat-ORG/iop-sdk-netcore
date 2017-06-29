@@ -5,7 +5,7 @@ using System.Linq;
 using IopCommon;
 using System.Threading.Tasks;
 
-namespace IopServerCore.Kernel
+namespace IopAppCore.Kernel
 {
   /// <summary>Type of job handler to be called when the job timer triggers.</summary>
   public delegate void CronJobHandler();
@@ -91,7 +91,7 @@ namespace IopServerCore.Kernel
     public const string ComponentName = "Kernel.Cron";
 
     /// <summary>Class logger.</summary>
-    private static Logger log = new Logger("IopServerCore." + ComponentName);
+    private static Logger log = new Logger("IopAppCore." + ComponentName);
 
 
     /// <summary>Lock object to protect access to jobs.</summary>

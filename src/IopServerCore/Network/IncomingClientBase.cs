@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using IopProtocol;
 using IopCommon;
 using System.Net.Security;
-using IopServerCore.Kernel;
+using IopAppCore.Kernel;
 using System.Security.Cryptography.X509Certificates;
 
 namespace IopServerCore.Network

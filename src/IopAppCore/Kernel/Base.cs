@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace IopServerCore.Kernel
+namespace IopAppCore.Kernel
 {
   /// <summary>
   /// Kernel.Base is the core of the application logic.
@@ -13,7 +13,7 @@ namespace IopServerCore.Kernel
   /// </summary>
   public static class Base
   {
-    private static Logger log = new Logger("IopServerCore.Kernel.Base");
+    private static Logger log = new Logger("IopAppCore.Kernel.Base");
 
     /// <summary>Component manager instance that is used for initialization and shutdown of the components.</summary>
     public static ComponentManager ComponentManager = new ComponentManager();

@@ -1,4 +1,5 @@
 ﻿using IopCommon;
+using IopAppCore.Kernel;
 using IopServerCore.Kernel;
 using System;
 using System.Collections.Generic;

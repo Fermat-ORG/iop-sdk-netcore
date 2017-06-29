@@ -7,7 +7,7 @@ using IopCommon;
 using System.Security.Cryptography.X509Certificates;
 using IopCrypto;
 
-namespace IopServerCore.Kernel
+namespace IopAppCore.Kernel
 {
   /// <summary>
   /// Types of values allowed in the configuration file.
@@ -35,28 +35,6 @@ namespace IopServerCore.Kernel
 
 
   /// <summary>
-  /// Description of each server role interface.
-  /// </summary>
-  public class RoleServerConfiguration
-  {
-    /// <summary>Roles of this server as a combination of server-specific flags.</summary>
-    public uint Roles;
-
-    /// <summary>Are the services on this port encrypted?</summary>
-    public bool Encrypted;
-
-    /// <summary>true if the server is operating on TCP protocol, false if on UDP.</summary>
-    public bool IsTcpServer;
-
-    /// <summary>Port on which this server provides its services.</summary>
-    public int Port;
-
-    /// <summary>Number of milliseconds after which the server's client is considered inactive and its connection can be terminated.</summary>
-    public int ClientKeepAliveTimeoutMs;
-  }
-
-
-  /// <summary>
   /// Base class for global configuration component that makes it easy to load configuration from file.
   /// </summary>
   public abstract class ConfigBase : Component
@@ -65,13 +43,13 @@ namespace IopServerCore.Kernel
     public const string ComponentName = "Kernel.Config";
 
     /// <summary>Instance logger.</summary>
-    protected Logger log = new Logger("IopServerCore." + ComponentName);
+    protected Logger log = new Logger("IopAppCore." + ComponentName);
 
     /// <summary>
     /// <para>Loads global configuration from a string array that corresponds to lines of configuration file.</para>
     /// <seealso cref="LoadConfigurationFromFile"/>
     /// </summary>
-    /// <param name="Lines">Server configuration as a string array.</param>
+    /// <param name="Lines">Application configuration as a string array.</param>
     /// <returns>true if the function succeeds, false otherwise.</returns>
     public abstract bool LoadConfigurationFromStringArray(string[] Lines);
 

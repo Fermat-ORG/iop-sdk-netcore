@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IopServerCore.Kernel
+namespace IopAppCore.Kernel
 {
   /// <summary>
   /// Implementation of shutdown signaling for a separated component
@@ -13,7 +13,7 @@ namespace IopServerCore.Kernel
   /// </summary>
   public class ComponentShutdown
   {
-    private static Logger log = new Logger("IopServerCore.Kernel.ComponentShutdown");
+    private static Logger log = new Logger("IopAppCore.Kernel.ComponentShutdown");
 
     /// <summary>Component-defined shutdown flag. This can be used to complement the global shutdown flag.</summary>
     public volatile bool IsShutdown = false;

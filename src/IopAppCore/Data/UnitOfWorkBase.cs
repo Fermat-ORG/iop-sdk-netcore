@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace IopServerCore.Data
+namespace IopAppCore.Data
 {
   /// <summary>
   /// Synchronization object that is used to prevent race conditions while accessing database.
@@ -56,7 +56,7 @@ namespace IopServerCore.Data
   public class UnitOfWorkBase<TDbContext> : IDisposable where TDbContext : DbContext, new()
   {
     /// <summary>Class logger.</summary>
-    private static Logger log = new Logger("IopServerCore.Data.UnitOfWork");
+    private static Logger log = new Logger("IopAppCore.Data.UnitOfWork");
 
     /// <summary>Database context.</summary>
     protected TDbContext context = null;

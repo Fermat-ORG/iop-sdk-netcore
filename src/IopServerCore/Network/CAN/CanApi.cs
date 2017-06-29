@@ -11,7 +11,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using IopCommon;
-using IopServerCore.Kernel;
+using IopAppCore.Kernel;
 using Newtonsoft.Json;
 using System.Globalization;
 using Iop.Can;

@@ -1,5 +1,6 @@
 ﻿using IopCommon;
 using IopCrypto;
+using IopAppCore.Kernel;
 using IopServerCore.Kernel;
 using System;
 using System.Collections.Generic;

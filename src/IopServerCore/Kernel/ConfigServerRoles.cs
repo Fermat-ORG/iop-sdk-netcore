@@ -7,6 +7,28 @@ using System.Threading.Tasks;
 namespace IopServerCore.Kernel
 {
   /// <summary>
+  /// Description of each server role interface.
+  /// </summary>
+  public class RoleServerConfiguration
+  {
+    /// <summary>Roles of this server as a combination of server-specific flags.</summary>
+    public uint Roles;
+
+    /// <summary>Are the services on this port encrypted?</summary>
+    public bool Encrypted;
+
+    /// <summary>true if the server is operating on TCP protocol, false if on UDP.</summary>
+    public bool IsTcpServer;
+
+    /// <summary>Port on which this server provides its services.</summary>
+    public int Port;
+
+    /// <summary>Number of milliseconds after which the server's client is considered inactive and its connection can be terminated.</summary>
+    public int ClientKeepAliveTimeoutMs;
+  }
+
+  
+  /// <summary>
   /// Class that implements with logic of the role server configuration.
   /// </summary>
   public class ConfigServerRoles

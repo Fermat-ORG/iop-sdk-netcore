@@ -2,8 +2,7 @@
 using IopCommon;
 using IopCrypto;
 using IopProtocol;
-using IopServerCore.Kernel;
-using IopServerCore.Network;
+using IopAppCore.Kernel;
 using System;
 using System.Collections.Generic;
 using System.Linq;

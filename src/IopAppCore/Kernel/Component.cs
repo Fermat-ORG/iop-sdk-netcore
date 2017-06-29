@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IopServerCore.Kernel
+namespace IopAppCore.Kernel
 {
   /// <summary>
   /// Defines basic implementation of the application component.

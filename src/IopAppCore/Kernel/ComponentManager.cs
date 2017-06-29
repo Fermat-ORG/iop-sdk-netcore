@@ -5,14 +5,14 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IopServerCore.Kernel
+namespace IopAppCore.Kernel
 {
   /// <summary>
   /// Calls initialization of other components and cares about component shutdown.
   /// </summary>
   public class ComponentManager
   {
-    private static Logger log = new Logger("IopServerCore.Kernel.ComponentManager");
+    private static Logger log = new Logger("IopAppCore.Kernel.ComponentManager");
 
     /// <summary>Possible system states from the component life point of view.</summary>
     public enum SystemStateType
