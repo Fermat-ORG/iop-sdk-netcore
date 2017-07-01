@@ -96,7 +96,7 @@ namespace IopProtocol
     /// <summary>
     /// Formats the value of the current instance using the specified format.
     /// </summary>
-    /// <param name="Format">Type of format to use. Currently only "G" and "US" is supported.</param>
+    /// <param name="Format">Type of format to use. Currently only "G" and "US" are supported.</param>
     /// <returns>Formatted string.</returns>
     public string ToString(string Format)
     {
@@ -106,7 +106,7 @@ namespace IopProtocol
     /// <summary>
     /// Formats the value of the current instance using the specified format.
     /// </summary>
-    /// <param name="Format">Type of format to use. Currently only "G" and "US" is supported.</param>
+    /// <param name="Format">Type of format to use. Currently only "G" and "US" are supported.</param>
     /// <param name="Provider">The provider to use to format the value.</param>
     /// <returns>Formatted string.</returns>
     public string ToString(string Format, IFormatProvider Provider)
