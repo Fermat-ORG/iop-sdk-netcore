@@ -151,10 +151,10 @@ namespace UnitTests
           Context ctx = Context.GetAndSetCurrentContext(subtaskContextId);
           await ProducerConsumerTest_ConsumeCurrent();
           consumerContext.AddEvent($"Consumed {ctx.Id}");
+          processedItems++;
         }
         int delay = rng.Next(50);
         await Task.Delay(delay);
-        processedItems++;
       }
 
       consumerContext.AddEvent("End");
@@ -249,6 +249,9 @@ namespace UnitTests
     }
 
 
+    /// <summary>Number of tasks to create in RemoteCallTest.</summary>
+    private const int RemoteCallTest_TasksCount = 50;
+
     /// <summary>
     /// Tests a remote call functionality of execution events.
     /// <para>
@@ -288,7 +291,7 @@ namespace UnitTests
       Task consumer = RemoteCallTest_TaskConsumer("Consumer", queueConsumer);
       Task rpc = RemoteCallTest_TaskConsumer("RPC", queueRpc);
 
-      for (int i = 0; i < 50; i++)
+      for (int i = 0; i < RemoteCallTest_TasksCount; i++)
       {
         string taskId = Context.CreateId("Task", i + 1);
 
@@ -299,6 +302,7 @@ namespace UnitTests
         while (taskContext == null)
         {
           taskContext = History.GetContext(taskId);
+          if (taskContext != null) break;
           await Task.Delay(200); 
         }
 
@@ -307,13 +311,41 @@ namespace UnitTests
         Assert.Equal(true, taskCompleted);
       }
 
+      await producer;
+      await consumer;
+      await rpc;
+
       ContextEvents producerEvents = History.GetContextEvents(Context.CreateId("Producer", 1));
       ContextEvents consumerEvents = History.GetContextEvents(Context.CreateId("Consumer", 1));
       ContextEvents rpcEvents = History.GetContextEvents(Context.CreateId("RPC", 1));
 
       log.Debug("Producer events:\n{0}", producerEvents.ToString("T"));
       log.Debug("Consumer events:\n{0}", consumerEvents.ToString("T"));
-      log.Debug("RPC events:\n{0}", consumerEvents.ToString("T"));
+      log.Debug("RPC events:\n{0}", rpcEvents.ToString("T"));
+
+      // Producer, Consumer, and RPC, all have to have Start event, End event, and RemoteCallTest_TasksCount task events - which makes total of 2 + RemoteCallTest_TasksCount events. 
+      Assert.Equal(RemoteCallTest_TasksCount + 2, producerEvents.Events.Count);
+      Assert.Equal(RemoteCallTest_TasksCount + 2, consumerEvents.Events.Count);
+      Assert.Equal(RemoteCallTest_TasksCount + 2, rpcEvents.Events.Count);
+
+      for (int i = 0; i < RemoteCallTest_TasksCount; i++)
+      {
+        string taskId = Context.CreateId("Task", i + 1);
+        ContextEvents taskEvents = History.GetContextEvents(taskId);
+        log.Debug("{0} events:\n{1}", taskId, taskEvents.ToString("T"));
+
+        // Each context must have only one "Consumed by" event.
+        bool consumed = false;
+        foreach (ExecutionEvent ee in taskEvents.Events)
+        {
+          if (ee.Name.Contains("Consumed by"))
+          {
+            Assert.Equal(false, consumed);
+            consumed = true;
+          }
+        }
+        Assert.Equal(true, consumed);
+      }
 
       log.Trace("(-)");
     }
@@ -327,11 +359,11 @@ namespace UnitTests
     /// <param name="QueueRpc">Queue for new items for the RPC.</param>
     private async Task RemoteCallTest_TaskProducer(string Name, ConcurrentQueue<string> QueueConsumer, ConcurrentQueue<string> QueueRpc)
     {
-      log.Trace("(Name:{0})", Name);
+      log.Trace("(Name:'{0}')", Name);
       Context producerContext = Context.Create(Name);
       producerContext.AddEvent("Start");
 
-      for (int i = 0; i < 50; i++)
+      for (int i = 0; i < RemoteCallTest_TasksCount; i++)
       {
         Context subtaskContext = Context.Create($"Task");
 
@@ -342,7 +374,7 @@ namespace UnitTests
         QueueConsumer.Enqueue(subtaskContext.Id);
         QueueRpc.Enqueue(subtaskContext.Id);
 
-        producerContext.AddEvent($"Produced '{subtaskContext.Id}'");
+        producerContext.AddEvent($"Produced {subtaskContext.Id}");
       }
 
       producerContext.AddEvent("End");
@@ -361,18 +393,18 @@ namespace UnitTests
       consumerContext.AddEvent("Start");
 
       int processedItems = 0;
-      while (processedItems < 50)
+      while (processedItems < RemoteCallTest_TasksCount)
       {
         string subtaskContextId;
         if (Queue.TryDequeue(out subtaskContextId))
         {
           Context ctx = Context.GetAndSetCurrentContext(subtaskContextId);
           await RemoteCallTest_ConsumeItem(Name);
-          consumerContext.AddEvent($"Consumed '{ctx.Id}'");
+          consumerContext.AddEvent($"Consumed {ctx.Id}");
+          processedItems++;
         }
         int delay = rng.Next(50);
         await Task.Delay(delay);
-        processedItems++;
       }
 
       consumerContext.AddEvent("End");
@@ -387,20 +419,79 @@ namespace UnitTests
     /// <param name="Name">Name of the consumer.</param>
     private async Task RemoteCallTest_ConsumeItem(string ConsumerName)
     {
-      log.Trace("(ConsumerName:{0})", ConsumerName);
-      int delay = rng.Next(50);
-      await Task.Delay(delay);
+      log.Trace("(ConsumerName:'{0}')", ConsumerName);
 
       Context ctx = Context.CurrentContext.Value;
       if (ctx.AddExclusiveEvent("Consuming start"))
       {
+        int delay = rng.Next(50);
+        await Task.Delay(delay);
         ctx.AddEvent($"Consumed by {ConsumerName}");
         ctx.AddEvent("Consuming end");
       }
-      else log.Trace("{} can not consume task '{0}' as it has been consumed already.", ConsumerName);
+      else log.Trace("'{0}' can not consume task {1} as it has been consumed already.", ConsumerName, ctx.Id);
 
       log.Trace("(-)");
     }
 
+
+
+    /// <summary>Number of events to create per context in ContextWaitEventTest.</summary>
+    private const int ContextWaitEventTest_EventCount = 20;
+
+    /// <summary>
+    /// Tests timeout and cancellation functionality of Context.WaitEvent.
+    /// </summary>
+    [Fact]
+    public async void ContextWaitEventTest()
+    {
+      log.Trace("()");
+      History.Clear();
+      History.SetMaxContexts(1000);
+      ContextEvents.SetMaxEventsPerContext(1000);
+
+      Context context = Context.Create("Ctx");
+      Task producer = ContextWaitEventTest_EventProducer(context);
+
+      // We wait for event "Evt/5" to be created, but no longer than 1 second, which should time out.
+      bool wait1 = await context.WaitEvent("Evt/5", 1000, CancellationToken.None);
+      log.Trace("Wait 1 {0}.", wait1 ? "succeeded" : "failed");
+      Assert.Equal(false, wait1);
+
+      // We wait for event "Evt/6" to be created, but no longer than 2 seconds, which should succeed.
+      bool wait2 = await context.WaitEvent("Evt/6", 2000, CancellationToken.None);
+      log.Trace("Wait 2 {0}.", wait2 ? "succeeded" : "failed");
+      Assert.Equal(true, wait2);
+
+      // We wait for event "Evt/16" to be created, but cancel wait if the wait is not finished within 2.5 seconds, so the wait should fail.
+      CancellationTokenSource cts = new CancellationTokenSource(2500);
+      bool wait3 = await context.WaitEvent("Evt/16", 20000, cts.Token);
+      log.Trace("Wait 3 {0}.", wait3 ? "succeeded" : "failed");
+      Assert.Equal(false, wait3);
+
+      await producer;
+
+      log.Trace("(-)");
+    }
+
+
+    /// <summary>
+    /// Simulates producer of events in a specific context.
+    /// </summary>
+    /// <param name="Context">Context in which to create events.</param>
+    private async Task ContextWaitEventTest_EventProducer(Context Context)
+    {
+      log.Trace("()");
+
+      for (int i = 0; i < ContextWaitEventTest_EventCount; i++)
+      {
+        int delay = rng.Next(200) + 200;
+        await Task.Delay(delay);
+
+        Context.AddEvent($"Evt/{i + 1}");
+      }
+
+      log.Trace("(-)");
+    }
   }
 }

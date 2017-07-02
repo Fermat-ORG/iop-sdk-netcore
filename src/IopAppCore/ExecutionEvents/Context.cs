@@ -202,15 +202,27 @@ namespace IopAppCore.ExecutionEvents
       CancellationTokenSource cancellationTokenSource = null;
       if (cancellationTokens.Count > 0) cancellationTokenSource = CancellationTokenSource.CreateLinkedTokenSource(cancellationTokens.ToArray());
 
+      bool removeWaiter = false;
       CancellationTokenRegistration? cancellationTokenRegistration = null;
+      TaskCompletionSource<bool> tcs = new TaskCompletionSource<bool>();
       try
       {
-        TaskCompletionSource<bool> tcs = new TaskCompletionSource<bool>();
         if (cancellationTokenSource != null) cancellationTokenRegistration = cancellationTokenSource.Token.Register(() => { tcs.TrySetResult(false); });
 
-        History.AddEventWaiter(this, Name, tcs);
+        if (History.AddEventWaiter(this, Name, tcs))
+        {
+          log.Trace("Waiter added and waiting for the task completion.");
+          res = await tcs.Task;
 
-        res = await tcs.Task;
+          // Only remove the waiter if its task failed, otherwise the event was added, which caused
+          // all its waiters to be removed.
+          removeWaiter = !res;
+        }
+        else
+        {
+          log.Trace("Event exists already, no waiting.");
+          res = true;
+        }
       }
       catch (TaskCanceledException)
       {
@@ -221,6 +233,7 @@ namespace IopAppCore.ExecutionEvents
         log.Error("Exception occurred: {0}", e.ToString());
       }
 
+      if (removeWaiter) History.RemoveEventWaiter(this, Name, tcs);
       if (cancellationTokenRegistration != null) cancellationTokenRegistration.Value.Dispose();
       if (cancellationTokenSource != null) cancellationTokenSource.Dispose();
       if (timeoutTokenSource != null) timeoutTokenSource.Dispose();

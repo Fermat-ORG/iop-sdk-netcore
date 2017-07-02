@@ -69,7 +69,7 @@ namespace IopAppCore.ExecutionEvents
         {
           LinkedListNode<string> first = contextIdLruList.First;
           Context contextToRemove = historicEvents[first.Value].Context;
-          RemoveContext(contextToRemove);
+          RemoveContextLocked(contextToRemove);
         }
 
         // Add new context as the last item to LRU list.
@@ -96,12 +96,23 @@ namespace IopAppCore.ExecutionEvents
 
       lock (lockObject)
       {
-        contextIdLruList.Remove(Context.LruLink);
-        historicEvents.Remove(Context.Id);
-        Context.SetLruLink(null);
+        RemoveContextLocked(Context);
       }
 
       log.Trace("(-)");
+    }
+
+
+    /// <summary>
+    /// Removes existing context from the history.
+    /// </summary>
+    /// <param name="Context">Execution context to remove.</param>
+    /// <remarks>The caller is responsible for holding lockObject before calling this method.</remarks>
+    public static void RemoveContextLocked(Context Context)
+    {
+      contextIdLruList.Remove(Context.LruLink);
+      historicEvents.Remove(Context.Id);
+      Context.SetLruLink(null);
     }
 
 
@@ -203,11 +214,13 @@ namespace IopAppCore.ExecutionEvents
 
     /// <summary>
     /// Adds waiter for a specific event in a given context.
+    /// The waitier is added only if the event has not been added to the context already.
     /// </summary>
     /// <param name="Context">The context to wait for event in.</param>
     /// <param name="EventName">Name of the event to wait for.</param>
     /// <param name="TaskCompletionSource">Task to be completed when the event is added.</param>
-    public static void AddEventWaiter(Context Context, string EventName, TaskCompletionSource<bool> TaskCompletionSource)
+    /// <returns>true if the event has not been added to the context before and waiter was added, false otherwise.</returns>
+    internal static bool AddEventWaiter(Context Context, string EventName, TaskCompletionSource<bool> TaskCompletionSource)
     {
       log.Trace("(Context.Id:'{0}',EventName:'{1}')", Context.Id, EventName);
 
@@ -220,7 +233,32 @@ namespace IopAppCore.ExecutionEvents
         if (!existed) contextEvents = AddContext(Context);
       }
 
-      contextEvents.AddEventWaiter(EventName, TaskCompletionSource);
+      bool res = contextEvents.AddEventWaiter(EventName, TaskCompletionSource);
+
+      log.Trace("(-):{0}", res);
+      return res;
+    }
+
+
+    /// <summary>
+    /// Removes existing waiter for a specific event in a given context.
+    /// </summary>
+    /// <param name="Context">The context of the waiter.</param>
+    /// <param name="EventName">Name of the event that the waiter is waiting for.</param>
+    /// <param name="TaskCompletionSource">Task of the waiter.</param>
+    internal static void RemoveEventWaiter(Context Context, string EventName, TaskCompletionSource<bool> TaskCompletionSource)
+    {
+      log.Trace("(Context.Id:'{0}',EventName:'{1}')", Context.Id, EventName);
+
+      ContextEvents contextEvents = null;
+      lock (lockObject)
+      {
+        if (!historicEvents.TryGetValue(Context.Id, out contextEvents)) contextEvents = null;
+      }
+
+      // If the context does not exist in history, it was probably removed due to inactivity and there are no waiters.
+      // Otherwise, remove the waiter.
+      if (contextEvents != null) contextEvents.RemoveEventWaiter(EventName, TaskCompletionSource);
 
       log.Trace("(-)");
     }

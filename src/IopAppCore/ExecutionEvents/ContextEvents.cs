@@ -28,7 +28,7 @@ namespace IopAppCore.ExecutionEvents
     /// <summary>Execution context.</summary>
     public Context Context;
 
-    /// <summary>Lock object to protect access to events and exclusiveEventsNames.</summary>
+    /// <summary>Lock object to protect access to events and usedEventsNames.</summary>
     private object eventsLock = new object();
 
     /// <summary>List of events that occurred within this context.</summary>
@@ -36,16 +36,17 @@ namespace IopAppCore.ExecutionEvents
     /// <summary>List of events that occurred within this context.</summary>
     public IReadOnlyList<ExecutionEvent> Events { get { return events.AsReadOnly(); } }
 
-    /// <summary>List of exclusive events.</summary>
-    /// <remarks>Note that </remarks>
-    private HashSet<string> exclusiveEventsNames;
+    /// <summary>List of event names that were added to the context already.</summary>
+    /// <remarks>Note that when a new event is added and the maximal number of events per context is reached,
+    /// events are deleted, but they are not removed from this list.</remarks>
+    private HashSet<string> usedEventsNames;
 
 
     /// <summary>Lock object to protect access to eventWaiters.</summary>
     private object eventWaitersLock = new object();
 
     /// <summary>List of tasks that should be completed when a particular event is added to the context.</summary>
-    private Dictionary<string, List<TaskCompletionSource<bool>>> eventWaiters = new Dictionary<string, List<TaskCompletionSource<bool>>>(StringComparer.Ordinal);
+    private Dictionary<string, HashSet<TaskCompletionSource<bool>>> eventWaiters = new Dictionary<string, HashSet<TaskCompletionSource<bool>>>(StringComparer.Ordinal);
 
 
 
@@ -61,7 +62,7 @@ namespace IopAppCore.ExecutionEvents
 
       this.Context = Context;
       events = new List<ExecutionEvent>();
-      exclusiveEventsNames = new HashSet<string>(StringComparer.Ordinal);
+      usedEventsNames = new HashSet<string>(StringComparer.Ordinal);
 
       log.Trace("(-)");
     }
@@ -73,20 +74,30 @@ namespace IopAppCore.ExecutionEvents
     internal void NotifyWaiters(ExecutionEvent Event)
     {
       log.Trace("(Event.Name:'{0}')", Event.Name);
+      List<TaskCompletionSource<bool>> tasksToComplete = null;
       lock (eventWaitersLock)
       {
-        List<TaskCompletionSource<bool>> completionSources = null;
+        HashSet<TaskCompletionSource<bool>> completionSources = null;
         if (eventWaiters.TryGetValue(Event.Name, out completionSources))
         {
-          if (completionSources.Count > 0) log.Trace("{0} waiters notified.", completionSources.Count);
+          if (completionSources.Count > 0)
+          {
+            log.Trace("{0} waiters notified.", completionSources.Count);
 
-          foreach (TaskCompletionSource<bool> tcs in completionSources)
-            tcs.TrySetResult(true);
+            tasksToComplete = new List<TaskCompletionSource<bool>>(completionSources);
 
-          // Remove all waiters from the list.
-          completionSources.Clear();
+            // Remove all waiters from the list.
+            completionSources.Clear();
+          }
         }
       }
+
+      if (tasksToComplete != null)
+      {
+        foreach (TaskCompletionSource<bool> tcs in tasksToComplete)
+          tcs.TrySetResult(true);
+      }
+
       log.Trace("(-)");
     }
 
@@ -105,14 +116,16 @@ namespace IopAppCore.ExecutionEvents
       bool res = false;
       lock (eventsLock)
       {
+        bool eventNameExists = usedEventsNames.Contains(Event.Name);
+
         // Check whether the exclusive event has already been added.
-        if (Event.IsExclusive) res = !exclusiveEventsNames.Contains(Event.Name);
+        if (Event.IsExclusive) res = !eventNameExists;
         else res = true;
 
         if (res)
         {
           events.Add(Event);
-          if (Event.IsExclusive) exclusiveEventsNames.Add(Event.Name);
+          if (!eventNameExists) usedEventsNames.Add(Event.Name);
           if (events.Count > maxEventsPerContext) events.RemoveRange(0, maxEventsPerContext / 2);
         }
       }
@@ -124,22 +137,54 @@ namespace IopAppCore.ExecutionEvents
 
     /// <summary>
     /// Adds waiter for a specific event.
+    /// The waitier is added only if the event has not been added to the context already.
     /// </summary>
     /// <param name="EventName">Name of the event to wait for.</param>
     /// <param name="TaskCompletionSource">Task to be completed when the event is added.</param>
-    public void AddEventWaiter(string EventName, TaskCompletionSource<bool> TaskCompletionSource)
+    /// <returns>true if the event has not been added to the context before and waiter was added, false otherwise.</returns>
+    internal bool AddEventWaiter(string EventName, TaskCompletionSource<bool> TaskCompletionSource)
+    {
+      log.Trace("(EventName:'{0}')", EventName);
+
+      bool res = false;
+      lock (eventWaitersLock)
+      {
+        if (!usedEventsNames.Contains(EventName))
+        {
+          // Event has not been added to this context yet.
+          HashSet<TaskCompletionSource<bool>> completionSources = null;
+          if (!eventWaiters.TryGetValue(EventName, out completionSources))
+          {
+            completionSources = new HashSet<TaskCompletionSource<bool>>();
+            eventWaiters.Add(EventName, completionSources);
+          }
+          completionSources.Add(TaskCompletionSource);
+          res = true;
+        }
+        // else Event has been added to this context before, no waiter is added.
+      }
+
+      log.Trace("(-):{0}", res);
+      return res;
+    }
+
+
+    /// <summary>
+    /// Removes existing waiter for a specific event.
+    /// </summary>
+    /// <param name="EventName">Name of the event the waiter is waiting for.</param>
+    /// <param name="TaskCompletionSource">Task of the waiter.</param>
+    internal void RemoveEventWaiter(string EventName, TaskCompletionSource<bool> TaskCompletionSource)
     {
       log.Trace("(EventName:'{0}')", EventName);
 
       lock (eventWaitersLock)
       {
-        List<TaskCompletionSource<bool>> completionSources = null;
-        if (!eventWaiters.TryGetValue(EventName, out completionSources))
+        HashSet<TaskCompletionSource<bool>> completionSources = null;
+        if (eventWaiters.TryGetValue(EventName, out completionSources))
         {
-          completionSources = new List<TaskCompletionSource<bool>>();
-          eventWaiters.Add(EventName, completionSources);
+          if (!completionSources.Remove(TaskCompletionSource)) log.Error("Waiter not found.");
         }
-        completionSources.Add(TaskCompletionSource);
       }
 
       log.Trace("(-)");
