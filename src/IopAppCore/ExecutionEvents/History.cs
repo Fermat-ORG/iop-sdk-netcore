@@ -25,7 +25,7 @@ namespace IopAppCore.ExecutionEvents
     private static object lockObject = new object();
 
     /// <summary>Recent historic events containing up to MaxHistoricEventLists mapped by their context ID.</summary>
-    private static Dictionary<string, ContextEvents> historicEvents = new Dictionary<string, ContextEvents>(StringComparer.Ordinal);
+    private static Dictionary<string, Context> historicEvents = new Dictionary<string, Context>(StringComparer.Ordinal);
 
     /// <summary>
     /// List of used context IDs.
@@ -57,10 +57,9 @@ namespace IopAppCore.ExecutionEvents
     /// </summary>
     /// <param name="Context">The new context to add.</param>
     /// <returns>New ContextEvents object created for the given context.</returns>
-    public static ContextEvents AddContext(Context Context)
+    public static void AddContext(Context Context)
     {
       log.Trace("(Context.Id:'{0}')", Context.Id);
-      ContextEvents res = null;
 
       lock (lockObject)
       {
@@ -68,7 +67,7 @@ namespace IopAppCore.ExecutionEvents
         if (contextIdLruList.Count == maxContexts)
         {
           LinkedListNode<string> first = contextIdLruList.First;
-          Context contextToRemove = historicEvents[first.Value].Context;
+          Context contextToRemove = historicEvents[first.Value];
           RemoveContextLocked(contextToRemove);
         }
 
@@ -77,12 +76,10 @@ namespace IopAppCore.ExecutionEvents
         Context.SetLruLink(lruLink);
 
         // Create new list of events in history for this context.
-        res = new ContextEvents(Context);
-        historicEvents.Add(Context.Id, res);
+        historicEvents.Add(Context.Id, Context);
       }
 
       log.Trace("(-)");
-      return res;
     }
 
 
@@ -117,27 +114,19 @@ namespace IopAppCore.ExecutionEvents
 
 
     /// <summary>
-    /// Adds new event to the context.
+    /// Moves the context in the LRU to last position, which prevents its deletion for some time if there are too many contexts.
     /// </summary>
     /// <param name="Context">Execution context.</param>
-    /// <param name="Event">Event to add.</param>
-    /// <returns>true if the function succeeds, false otherwise.
-    /// Adding exclusive event succeeds if the event was not added to this context before.
-    /// Adding non-exclusive event will always succeeds.</returns>
-    internal static bool AddEvent(Context Context, ExecutionEvent Event)
+    internal static void UseContext(Context Context)
     {
-      log.Trace("(Context.Id:'{0}',Event.Name:'{1}')", Context.Id, Event.Name);
-      bool res = false;
+      log.Trace("(Context.Id:'{0}')", Context.Id);
 
-      ContextEvents contextEvents = null;
       lock (lockObject)
       {
-        bool existed = historicEvents.TryGetValue(Context.Id, out contextEvents);
+        bool existed = historicEvents.ContainsKey(Context.Id);
 
         // If the context does not exist in history, it was probably removed due to inactivity and to add new event we have to create it again.
-        if (!existed) contextEvents = AddContext(Context);
-
-        res = contextEvents.AddEvent(Event);
+        if (!existed) AddContext(Context);
 
         // If we did not just added the context (which means it is the last one in LRU), we want to make sure adding event puts the context to last position in LRU.
         if (existed)
@@ -147,10 +136,7 @@ namespace IopAppCore.ExecutionEvents
         }
       }
 
-      if (res) contextEvents.NotifyWaiters(Event);
-
-      log.Trace("(-):{0}", res);
-      return res;
+      log.Trace("(-)");
     }
 
 
@@ -164,8 +150,7 @@ namespace IopAppCore.ExecutionEvents
       log.Trace("(Id:'{0}')", Id);
 
       Context res = null;
-      ContextEvents contextEvents;
-      if (historicEvents.TryGetValue(Id, out contextEvents)) res = contextEvents.Context;
+      if (!historicEvents.TryGetValue(Id, out res)) res = null;
 
       log.Trace("(-)");
       return res;
@@ -173,28 +158,12 @@ namespace IopAppCore.ExecutionEvents
 
 
     /// <summary>
-    /// Finds context events for context of given ID.
+    /// Obtains a copy of all contexts.
     /// </summary>
-    /// <param name="Id">Context identifier.</param>
-    /// <returns>Existing context events or null if no context with the given identifier exists.</returns>
-    public static ContextEvents GetContextEvents(string Id)
+    /// <returns>List of contexts.</returns>
+    public static List<Context> GetHistoricContexts()
     {
-      log.Trace("(Id:'{0}')", Id);
-
-      ContextEvents res;
-      if (!historicEvents.TryGetValue(Id, out res)) res = null;
-
-      log.Trace("(-):{0}", res != null ? "ContextEvents" : "null");
-      return res;
-    }
-
-    /// <summary>
-    /// Obtains a copy of all context events.
-    /// </summary>
-    /// <returns>List of context events.</returns>
-    public static List<ContextEvents> GetHistoricEvents()
-    {
-      return new List<ContextEvents>(historicEvents.Values);
+      return new List<Context>(historicEvents.Values);
     }
 
     /// <summary>
@@ -207,58 +176,6 @@ namespace IopAppCore.ExecutionEvents
       Context.Clear();
       historicEvents.Clear();
       contextIdLruList.Clear();
-
-      log.Trace("(-)");
-    }
-
-
-    /// <summary>
-    /// Adds waiter for a specific event in a given context.
-    /// The waitier is added only if the event has not been added to the context already.
-    /// </summary>
-    /// <param name="Context">The context to wait for event in.</param>
-    /// <param name="EventName">Name of the event to wait for.</param>
-    /// <param name="TaskCompletionSource">Task to be completed when the event is added.</param>
-    /// <returns>true if the event has not been added to the context before and waiter was added, false otherwise.</returns>
-    internal static bool AddEventWaiter(Context Context, string EventName, TaskCompletionSource<bool> TaskCompletionSource)
-    {
-      log.Trace("(Context.Id:'{0}',EventName:'{1}')", Context.Id, EventName);
-
-      ContextEvents contextEvents = null;
-      lock (lockObject)
-      {
-        bool existed = historicEvents.TryGetValue(Context.Id, out contextEvents);
-
-        // If the context does not exist in history, it was probably removed due to inactivity and to add new event we have to create it again.
-        if (!existed) contextEvents = AddContext(Context);
-      }
-
-      bool res = contextEvents.AddEventWaiter(EventName, TaskCompletionSource);
-
-      log.Trace("(-):{0}", res);
-      return res;
-    }
-
-
-    /// <summary>
-    /// Removes existing waiter for a specific event in a given context.
-    /// </summary>
-    /// <param name="Context">The context of the waiter.</param>
-    /// <param name="EventName">Name of the event that the waiter is waiting for.</param>
-    /// <param name="TaskCompletionSource">Task of the waiter.</param>
-    internal static void RemoveEventWaiter(Context Context, string EventName, TaskCompletionSource<bool> TaskCompletionSource)
-    {
-      log.Trace("(Context.Id:'{0}',EventName:'{1}')", Context.Id, EventName);
-
-      ContextEvents contextEvents = null;
-      lock (lockObject)
-      {
-        if (!historicEvents.TryGetValue(Context.Id, out contextEvents)) contextEvents = null;
-      }
-
-      // If the context does not exist in history, it was probably removed due to inactivity and there are no waiters.
-      // Otherwise, remove the waiter.
-      if (contextEvents != null) contextEvents.RemoveEventWaiter(EventName, TaskCompletionSource);
 
       log.Trace("(-)");
     }

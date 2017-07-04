@@ -20,6 +20,10 @@ namespace UnitTests
     /// <summary>Random number generator.</summary>
     private static Random rng = new Random();
 
+
+    /// <summary>Number of tasks to create in ProducerConsumerTest per producer.</summary>
+    private const int ProducerConsumerTest_ProducerTasksCount = 10;
+
     /// <summary>
     /// Tests if ExecutionEvents are correctly created.
     /// This test uses two producers and one consumer thread to create a series of different
@@ -31,7 +35,7 @@ namespace UnitTests
       log.Trace("()");
       History.Clear();
       History.SetMaxContexts(1000);
-      ContextEvents.SetMaxEventsPerContext(1000);
+      Context.SetMaxEventsPerContext(1000);
 
       ConcurrentQueue<string> queue = new ConcurrentQueue<string>();
       Task producer1 = ProducerConsumerTest_TaskProducer("Producer", queue);
@@ -44,61 +48,59 @@ namespace UnitTests
 
       await consumer;
 
-      ContextEvents producer1Events = History.GetContextEvents(Context.CreateId("Producer", 1));
-      ContextEvents producer2Events = History.GetContextEvents(Context.CreateId("Producer", 2));
-      ContextEvents consumerEvents = History.GetContextEvents(Context.CreateId("Consumer", 1));
+      Context producer1Context = History.GetContext(Context.CreateId("Producer", 1));
+      Context producer2Context = History.GetContext(Context.CreateId("Producer", 2));
+      Context consumerContext = History.GetContext(Context.CreateId("Consumer", 1));
 
-      List<ContextEvents> producer1SubtasksEvents = new List<ContextEvents>();
-      for (int i = 0; i < 5; i++)
-        producer1SubtasksEvents.Add(History.GetContextEvents(Context.CreateId(producer1Events.Context.Id + " Subtask", i + 1)));
+      List<Context> producer1SubtasksContexts = new List<Context>();
+      for (int i = 0; i < ProducerConsumerTest_ProducerTasksCount; i++)
+        producer1SubtasksContexts.Add(History.GetContext(Context.CreateId(producer1Context.Id + " Subtask", i + 1)));
 
-      List<ContextEvents> producer2SubtasksEvents = new List<ContextEvents>();
-      for (int i = 0; i < 5; i++)
-        producer2SubtasksEvents.Add(History.GetContextEvents(Context.CreateId(producer2Events.Context.Id + " Subtask", i + 1)));
+      List<Context> producer2SubtasksContexts = new List<Context>();
+      for (int i = 0; i < ProducerConsumerTest_ProducerTasksCount; i++)
+        producer2SubtasksContexts.Add(History.GetContext(Context.CreateId(producer2Context.Id + " Subtask", i + 1)));
 
-      string producer1EventsString = producer1Events.ToString();
-      string producer2EventsString = producer2Events.ToString();
-      string consumerEventsString = consumerEvents.ToString();
+      string producer1ContextString = producer1Context.ToString();
+      string producer2ContextString = producer2Context.ToString();
+      string consumerContextString = consumerContext.ToString();
 
+
+      History.Clear();
       Context expectedProducer1Context = new Context("Producer", 1);
-
-      ContextEvents expectedProducer1ContextEvents = new ContextEvents(expectedProducer1Context);
-      expectedProducer1ContextEvents.AddEvent(new ExecutionEvent("Start"));
-      for (int i = 0; i < 5; i++)
+      expectedProducer1Context.AddEvent(new ExecutionEvent("Start"));
+      for (int i = 0; i < ProducerConsumerTest_ProducerTasksCount; i++)
       {
         string subtaskId = Context.CreateId(expectedProducer1Context.Id + " Subtask", i + 1);
-        expectedProducer1ContextEvents.AddEvent(new ExecutionEvent($"Produced {subtaskId}"));
+        expectedProducer1Context.AddEvent(new ExecutionEvent($"Produced {subtaskId}"));
       }
-      expectedProducer1ContextEvents.AddEvent(new ExecutionEvent("End"));
-      Assert.Equal(expectedProducer1ContextEvents.ToString(), producer1EventsString);
-      log.Debug("Producer 1 events:\n{0}", producer1Events.ToString("T"));
+      expectedProducer1Context.AddEvent(new ExecutionEvent("End"));
+      Assert.Equal(expectedProducer1Context.ToString(), producer1ContextString);
+      log.Debug("Producer 1 events:\n{0}", producer1Context.ToString("T"));
 
 
 
       Context expectedProducer2Context = new Context("Producer", 2);
-
-      ContextEvents expectedProducer2ContextEvents = new ContextEvents(expectedProducer2Context);
-      expectedProducer2ContextEvents.AddEvent(new ExecutionEvent("Start"));
-      for (int i = 0; i < 5; i++)
+      expectedProducer2Context.AddEvent(new ExecutionEvent("Start"));
+      for (int i = 0; i < ProducerConsumerTest_ProducerTasksCount; i++)
       {
         string subtaskId = Context.CreateId(expectedProducer2Context.Id + " Subtask", i + 1);
-        expectedProducer2ContextEvents.AddEvent(new ExecutionEvent($"Produced {subtaskId}"));
+        expectedProducer2Context.AddEvent(new ExecutionEvent($"Produced {subtaskId}"));
       }
-      expectedProducer2ContextEvents.AddEvent(new ExecutionEvent("End"));
-      Assert.Equal(expectedProducer2ContextEvents.ToString(), producer2EventsString);
-      log.Debug("Producer 2 events:\n{0}", producer2Events.ToString("T"));
+      expectedProducer2Context.AddEvent(new ExecutionEvent("End"));
+      Assert.Equal(expectedProducer2Context.ToString(), producer2ContextString);
+      log.Debug("Producer 2 events:\n{0}", producer2Context.ToString("T"));
 
 
 
-      log.Debug("Consumer events:\n{0}", consumerEvents.ToString("T"));
+      log.Debug("Consumer events:\n{0}", consumerContext.ToString("T"));
 
       log.Debug("Producer 1 subtask events:");
-      foreach (ContextEvents events in producer1SubtasksEvents)
-        log.Debug("\n{0}", events.ToString("T"));
+      foreach (Context ctx in producer1SubtasksContexts)
+        log.Debug("\n{0}", ctx.ToString("T"));
 
       log.Debug("Producer 2 subtask events:");
-      foreach (ContextEvents events in producer2SubtasksEvents)
-        log.Debug("\n{0}", events.ToString("T"));
+      foreach (Context ctx in producer2SubtasksContexts)
+        log.Debug("\n{0}", ctx.ToString("T"));
 
       log.Trace("(-)");
     }
@@ -114,7 +116,7 @@ namespace UnitTests
       Context producerContext = Context.Create(Name);
       producerContext.AddEvent("Start");
 
-      for (int i = 0; i < 5; i++)
+      for (int i = 0; i < ProducerConsumerTest_ProducerTasksCount; i++)
       {
         Context subtaskContext = Context.Create(producerContext.Id + " Subtask");
 
@@ -143,7 +145,7 @@ namespace UnitTests
       consumerContext.AddEvent("Start");
 
       int processedItems = 0;
-      while (processedItems < 10)
+      while (processedItems < 2 * ProducerConsumerTest_ProducerTasksCount)
       {
         string subtaskContextId;
         if (Queue.TryDequeue(out subtaskContextId))
@@ -190,7 +192,7 @@ namespace UnitTests
       log.Trace("()");
       History.Clear();
       History.SetMaxContexts(3);
-      ContextEvents.SetMaxEventsPerContext(4);
+      Context.SetMaxEventsPerContext(4);
 
       Context context1 = Context.Create("First");
       context1.AddEvent("1");
@@ -202,10 +204,9 @@ namespace UnitTests
       context1.AddEvent("7");
 
       // First 3 events can not exist anymore, last event has to exist.
-      ContextEvents context1Events = History.GetContextEvents(context1.Id);
-      Assert.InRange(context1Events.Events.Count, 1, 4);
+      Assert.InRange(context1.Events.Count, 1, 4);
       bool lastExists = false;
-      foreach (ExecutionEvent ee in context1Events.Events)
+      foreach (ExecutionEvent ee in context1.Events)
       {
         Assert.NotEqual(ee.Name, "1");
         Assert.NotEqual(ee.Name, "2");
@@ -242,8 +243,8 @@ namespace UnitTests
       Assert.Equal(context2, History.GetContext(context2.Id));
       Assert.Equal(context4, History.GetContext(context4.Id));
 
-      context1Events = History.GetContextEvents(context1.Id);
-      Assert.InRange(context1Events.Events.Count, 1, 4);
+      context1 = History.GetContext(context1.Id);
+      Assert.InRange(context1.Events.Count, 1, 4);
 
       log.Trace("(-)");
     }
@@ -271,7 +272,7 @@ namespace UnitTests
       log.Trace("()");
       History.Clear();
       History.SetMaxContexts(1000);
-      ContextEvents.SetMaxEventsPerContext(1000);
+      Context.SetMaxEventsPerContext(1000);
 
       // Once again we will have a producer and a consumer.
       // The producer will perform a task, which ends with a creation of item 
@@ -315,23 +316,23 @@ namespace UnitTests
       await consumer;
       await rpc;
 
-      ContextEvents producerEvents = History.GetContextEvents(Context.CreateId("Producer", 1));
-      ContextEvents consumerEvents = History.GetContextEvents(Context.CreateId("Consumer", 1));
-      ContextEvents rpcEvents = History.GetContextEvents(Context.CreateId("RPC", 1));
+      Context producerContext = History.GetContext(Context.CreateId("Producer", 1));
+      Context consumerContext = History.GetContext(Context.CreateId("Consumer", 1));
+      Context rpcContext = History.GetContext(Context.CreateId("RPC", 1));
 
-      log.Debug("Producer events:\n{0}", producerEvents.ToString("T"));
-      log.Debug("Consumer events:\n{0}", consumerEvents.ToString("T"));
-      log.Debug("RPC events:\n{0}", rpcEvents.ToString("T"));
+      log.Debug("Producer events:\n{0}", producerContext.ToString("T"));
+      log.Debug("Consumer events:\n{0}", consumerContext.ToString("T"));
+      log.Debug("RPC events:\n{0}", rpcContext.ToString("T"));
 
       // Producer, Consumer, and RPC, all have to have Start event, End event, and RemoteCallTest_TasksCount task events - which makes total of 2 + RemoteCallTest_TasksCount events. 
-      Assert.Equal(RemoteCallTest_TasksCount + 2, producerEvents.Events.Count);
-      Assert.Equal(RemoteCallTest_TasksCount + 2, consumerEvents.Events.Count);
-      Assert.Equal(RemoteCallTest_TasksCount + 2, rpcEvents.Events.Count);
+      Assert.Equal(RemoteCallTest_TasksCount + 2, producerContext.Events.Count);
+      Assert.Equal(RemoteCallTest_TasksCount + 2, consumerContext.Events.Count);
+      Assert.Equal(RemoteCallTest_TasksCount + 2, rpcContext.Events.Count);
 
       for (int i = 0; i < RemoteCallTest_TasksCount; i++)
       {
         string taskId = Context.CreateId("Task", i + 1);
-        ContextEvents taskEvents = History.GetContextEvents(taskId);
+        Context taskEvents = History.GetContext(taskId);
         log.Debug("{0} events:\n{1}", taskId, taskEvents.ToString("T"));
 
         // Each context must have only one "Consumed by" event.
@@ -448,7 +449,7 @@ namespace UnitTests
       log.Trace("()");
       History.Clear();
       History.SetMaxContexts(1000);
-      ContextEvents.SetMaxEventsPerContext(1000);
+      Context.SetMaxEventsPerContext(1000);
 
       Context context = Context.Create("Ctx");
       Task producer = ContextWaitEventTest_EventProducer(context);
